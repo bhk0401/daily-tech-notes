@@ -1,0 +1,11 @@
+topics:
+  - "Next.js App Router：缓存、ISR 与 revalidate 的正确用法"
+  - "前端 Sandbox：iframe / postMessage / CSP 的组合实践"
+  - "容器基础：镜像分层、构建缓存与多阶段 Dockerfile"
+  - "Kubernetes 入门：Deployment/Service/Ingress 的最小闭环"
+  - "API Gateway：鉴权、限流、灰度发布的实现思路"
+  - "AI 工程化：RAG 的数据切分、召回与评测"
+  - "前端可观测性：Sentry/ARMS 的错误聚合与告警降噪"
+  - "Web Worker/Service Worker：离线与并行计算实践"
+  - "Bun + Node 工具链：性能与兼容性对比"
+  - "CI/CD: 工程化能力，自动化流水线建设"
