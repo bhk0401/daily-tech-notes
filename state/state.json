@@ -1,4 +1,11 @@
 {
-  "lastIndex": -1,
-  "history": []
+  "lastIndex": 0,
+  "lastRun": "2026-04-08T02:41:00Z",
+  "history": [
+    {
+      "date": "2026-04-08",
+      "slug": "nextjs-server-components",
+      "title": "Next.js 14 Server Components 实战"
+    }
+  ]
 }
