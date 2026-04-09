@@ -1,11 +1,16 @@
 {
-  "lastIndex": 0,
-  "lastRun": "2026-04-08T02:41:00Z",
+  "lastIndex": 1,
+  "lastRun": "2026-04-09T01:30:00Z",
   "history": [
     {
       "date": "2026-04-08",
       "slug": "nextjs-server-components",
       "title": "Next.js 14 Server Components 实战"
+    },
+    {
+      "date": "2026-04-09",
+      "slug": "frontend-sandbox",
+      "title": "前端 Sandbox：iframe / postMessage / CSP 的组合实践"
     }
   ]
 }
