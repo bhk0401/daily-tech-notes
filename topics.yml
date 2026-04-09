@@ -1,7 +1,10 @@
 topics:
   - "Next.js App Router：缓存、ISR 与 revalidate 的正确用法"
-  - "前端 Sandbox：iframe / postMessage / CSP 的组合实践"
+  - "Sandbox 组合实践：浏览器隔离（iframe/postMessage/CSP）与云端沙箱（容器/VM）的协同"
+  - "容器与 Kubernetes 入门：Docker + Deployment/Service/Ingress 的最小闭环"
   - "容器基础：镜像分层、构建缓存与多阶段 Dockerfile"
+  - "从 Docker 到 Kubernetes：Deployment/Service/Ingress 的最小闭环"
+  - "实战入门：用 Docker 构建镜像，并在 Kubernetes 通过 Deployment/Service/Ingress 跑通最小闭环"
   - "Kubernetes 入门：Deployment/Service/Ingress 的最小闭环"
   - "API Gateway：鉴权、限流、灰度发布的实现思路"
   - "AI 工程化：RAG 的数据切分、召回与评测"
