@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-10
+
+- [容器与 Kubernetes 入门：Docker + Deployment/Service/Ingress 的最小闭环](./2026/2026-04-10-k8s-minimal-loop.md) - 快速跑通从 Docker 镜像到 K8s 部署的完整链路
+
 ## 2026-04-09
 
 - [前端 Sandbox：iframe / postMessage / CSP 的组合实践](./2026/2026-04-09-frontend-sandbox.md) - 掌握前端安全隔离的组合方案
@@ -14,4 +18,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-09*
+*自动更新，最后生成时间：2026-04-10*
