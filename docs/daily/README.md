@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-12
+
+- [从 Docker 到 Kubernetes：Deployment/Service/Ingress 的最小闭环](./2026/2026-04-12-docker-to-k8s.md) - 用最小可运行示例演示从 Docker 镜像到 K8s 对外服务的完整链路
+
 ## 2026-04-11
 
 - [容器基础：镜像分层、构建缓存与多阶段 Dockerfile](./2026/2026-04-11-docker-multistage-build.md) - 掌握 Dockerfile 优化技巧，将镜像体积减少 50%-90%
@@ -22,4 +26,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-11*
+*自动更新，最后生成时间：2026-04-12*

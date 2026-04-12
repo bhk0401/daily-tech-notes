@@ -1,6 +1,6 @@
 {
-  "lastIndex": 3,
-  "lastRun": "2026-04-11T01:30:00Z",
+  "lastIndex": 4,
+  "lastRun": "2026-04-12T01:30:00Z",
   "history": [
     {
       "date": "2026-04-08",
@@ -21,6 +21,11 @@
       "date": "2026-04-11",
       "slug": "docker-multistage-build",
       "title": "容器基础：镜像分层、构建缓存与多阶段 Dockerfile"
+    },
+    {
+      "date": "2026-04-12",
+      "slug": "docker-to-k8s-loop",
+      "title": "从 Docker 到 Kubernetes：Deployment/Service/Ingress 的最小闭环"
     }
   ]
 }
