@@ -1,6 +1,6 @@
 {
-  "lastIndex": 1,
-  "lastRun": "2026-04-09T01:30:00Z",
+  "lastIndex": 5,
+  "lastRun": "2026-04-13T01:30:00Z",
   "history": [
     {
       "date": "2026-04-08",
@@ -11,6 +11,26 @@
       "date": "2026-04-09",
       "slug": "frontend-sandbox",
       "title": "前端 Sandbox：iframe / postMessage / CSP 的组合实践"
+    },
+    {
+      "date": "2026-04-10",
+      "slug": "k8s-minimal-loop",
+      "title": "容器与 Kubernetes 入门：Docker + Deployment/Service/Ingress 的最小闭环"
+    },
+    {
+      "date": "2026-04-11",
+      "slug": "docker-multistage-build",
+      "title": "容器基础：镜像分层、构建缓存与多阶段 Dockerfile"
+    },
+    {
+      "date": "2026-04-12",
+      "slug": "docker-to-k8s-loop",
+      "title": "从 Docker 到 Kubernetes：Deployment/Service/Ingress 的最小闭环"
+    },
+    {
+      "date": "2026-04-13",
+      "slug": "docker-k8s-hands-on",
+      "title": "实战入门：用 Docker 构建镜像，并在 Kubernetes 通过 Deployment/Service/Ingress 跑通最小闭环"
     }
   ]
 }
