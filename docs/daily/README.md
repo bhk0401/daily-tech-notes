@@ -4,9 +4,13 @@
 
 ---
 
+## 2026-04-13
+
+- [实战入门：用 Docker 构建镜像，并在 Kubernetes 通过 Deployment/Service/Ingress 跑通最小闭环](./2026-04-13-docker-k8s-hands-on.md) - 完整的 Node.js 应用容器化并部署到 K8s 的实战指南，包含 Dockerfile、Deployment、Service、Ingress 配置
+
 ## 2026-04-12
 
-- [从 Docker 到 Kubernetes：Deployment/Service/Ingress 的最小闭环](./2026/2026-04-12-docker-to-k8s.md) - 用最小可运行示例演示从 Docker 镜像到 K8s 对外服务的完整链路
+- [从 Docker 到 Kubernetes：Deployment/Service/Ingress 的最小闭环](./2026-04-12-docker-to-k8s.md) - 用最小可运行示例演示从 Docker 镜像到 K8s 对外服务的完整链路
 
 ## 2026-04-11
 
@@ -26,4 +30,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-12*
+*自动更新，最后生成时间：2026-04-13*
