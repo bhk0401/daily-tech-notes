@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-14
+
+- [Kubernetes 入门：Deployment/Service/Ingress 的最小闭环](./2026/2026-04-14-k8s-deployment-service-ingress.md) - 深入理解 K8s 三大核心资源，用最小配置跑通应用部署、服务发现与对外暴露的完整闭环
+
 ## 2026-04-13
 
 - [实战入门：用 Docker 构建镜像，并在 Kubernetes 通过 Deployment/Service/Ingress 跑通最小闭环](./2026-04-13-docker-k8s-hands-on.md) - 完整的 Node.js 应用容器化并部署到 K8s 的实战指南，包含 Dockerfile、Deployment、Service、Ingress 配置
@@ -30,4 +34,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-13*
+*自动更新，最后生成时间：2026-04-14*

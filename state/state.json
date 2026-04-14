@@ -1,6 +1,6 @@
 {
-  "lastIndex": 5,
-  "lastRun": "2026-04-13T01:30:00Z",
+  "lastIndex": 6,
+  "lastRun": "2026-04-14T01:30:00Z",
   "history": [
     {
       "date": "2026-04-08",
@@ -31,6 +31,11 @@
       "date": "2026-04-13",
       "slug": "docker-k8s-hands-on",
       "title": "实战入门：用 Docker 构建镜像，并在 Kubernetes 通过 Deployment/Service/Ingress 跑通最小闭环"
+    },
+    {
+      "date": "2026-04-14",
+      "slug": "k8s-deployment-service-ingress",
+      "title": "Kubernetes 入门：Deployment/Service/Ingress 的最小闭环"
     }
   ]
 }
