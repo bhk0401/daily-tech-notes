@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-15
+
+- [API Gateway：鉴权、限流、灰度发布的实现思路](./2026-04-15-api-gateway-auth-rate-limit-canary.md) - 基于 Node.js + Express 实现生产级 API 网关，涵盖 JWT 鉴权、令牌桶限流、灰度发布三大核心能力，含完整可运行代码
+
 ## 2026-04-14
 
 - [Kubernetes 入门：Deployment/Service/Ingress 的最小闭环](./2026/2026-04-14-k8s-deployment-service-ingress.md) - 深入理解 K8s 三大核心资源，用最小配置跑通应用部署、服务发现与对外暴露的完整闭环
@@ -34,4 +38,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-14*
+*自动更新，最后生成时间：2026-04-15*
