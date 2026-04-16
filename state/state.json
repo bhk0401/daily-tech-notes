@@ -1,6 +1,6 @@
 {
-  "lastIndex": 7,
-  "lastRun": "2026-04-15T01:30:00Z",
+  "lastIndex": 8,
+  "lastRun": "2026-04-16T01:30:00Z",
   "history": [
     {
       "date": "2026-04-08",
@@ -41,6 +41,11 @@
       "date": "2026-04-15",
       "slug": "api-gateway-auth-rate-limit-canary",
       "title": "API Gateway：鉴权、限流、灰度发布的实现思路"
+    },
+    {
+      "date": "2026-04-16",
+      "slug": "ai-rag-data-chunking-retrieval-eval",
+      "title": "AI 工程化：RAG 的数据切分、召回与评测"
     }
   ]
 }
