@@ -1,6 +1,6 @@
 {
-  "lastIndex": 8,
-  "lastRun": "2026-04-16T01:30:00Z",
+  "lastIndex": 9,
+  "lastRun": "2026-04-17T01:30:00Z",
   "history": [
     {
       "date": "2026-04-08",
@@ -46,6 +46,11 @@
       "date": "2026-04-16",
       "slug": "ai-rag-data-chunking-retrieval-eval",
       "title": "AI 工程化：RAG 的数据切分、召回与评测"
+    },
+    {
+      "date": "2026-04-17",
+      "slug": "frontend-observability-sentry-arms",
+      "title": "前端可观测性：Sentry/ARMS 的错误聚合与告警降噪"
     }
   ]
 }
