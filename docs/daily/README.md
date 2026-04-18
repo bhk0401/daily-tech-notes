@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-18
+
+- [Web Worker/Service Worker：离线与并行计算实践](./2026-04-18-web-worker-service-worker.md) - 掌握 Web Worker 并行计算与 Service Worker 离线缓存策略，构建高性能 PWA 应用，含大数据排序、离线缓存、组合使用三大实战示例
+
 ## 2026-04-17
 
 - [前端可观测性：Sentry/ARMS 的错误聚合与告警降噪](./2026-04-17-frontend-observability-sentry-arms.md) - 深入理解前端监控核心机制，掌握 Sentry/ARMS 错误聚合策略，建立可持续的告警降噪方案，含完整接入示例与排查清单
@@ -46,4 +50,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-17*
+*自动更新，最后生成时间：2026-04-18*
