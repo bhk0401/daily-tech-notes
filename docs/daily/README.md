@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-20
+
+- [CI/CD：工程化能力，自动化流水线建设](./2026-04-20-ci-cd-pipeline-automation.md) - 掌握 GitHub Actions CI/CD 流水线构建，涵盖代码检查、单元测试、镜像构建、多环境部署全流程，含完整 YAML 配置与质量门禁实践
+
 ## 2026-04-19
 
 - [Bun + Node 工具链：性能与兼容性对比](./2026-04-19-bun-node-toolchain-comparison.md) - 深入对比 Bun 与 Node.js 运行时性能差异，涵盖启动速度、依赖安装、测试运行等核心场景，含 HTTP 服务器性能对比实战与兼容性配置指南

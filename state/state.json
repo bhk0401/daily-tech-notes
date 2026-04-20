@@ -1,6 +1,6 @@
 {
-  "lastIndex": 11,
-  "lastRun": "2026-04-19T01:30:00Z",
+  "lastIndex": 12,
+  "lastRun": "2026-04-20T01:30:00Z",
   "history": [
     {
       "date": "2026-04-08",
@@ -56,6 +56,16 @@
       "date": "2026-04-18",
       "slug": "web-worker-service-worker",
       "title": "Web Worker/Service Worker：离线与并行计算实践"
+    },
+    {
+      "date": "2026-04-19",
+      "slug": "bun-node-toolchain",
+      "title": "Bun + Node 工具链：性能与兼容性对比"
+    },
+    {
+      "date": "2026-04-20",
+      "slug": "ci-cd-pipeline-automation",
+      "title": "CI/CD：工程化能力，自动化流水线建设"
     }
   ]
 }
