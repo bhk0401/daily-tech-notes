@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-21
+
+- [Next.js App Router：缓存、ISR 与 revalidate 的正确用法](./2026-04-21-nextjs-app-router-cache.md) - 深入理解 Next.js App Router 三层缓存架构，掌握 ISR 增量静态再生与 revalidate 配置策略，含商品列表缓存、按需刷新、复杂计算缓存三大实战示例
+
 ## 2026-04-20
 
 - [CI/CD：工程化能力，自动化流水线建设](./2026-04-20-ci-cd-pipeline-automation.md) - 掌握 GitHub Actions CI/CD 流水线构建，涵盖代码检查、单元测试、镜像构建、多环境部署全流程，含完整 YAML 配置与质量门禁实践
