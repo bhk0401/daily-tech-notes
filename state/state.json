@@ -1,6 +1,6 @@
 {
-  "lastIndex": 0,
-  "lastRun": "2026-04-21T01:30:00Z",
+  "lastIndex": 1,
+  "lastRun": "2026-04-22T01:30:00Z",
   "history": [
     {
       "date": "2026-04-08",
@@ -66,6 +66,11 @@
       "date": "2026-04-20",
       "slug": "ci-cd-pipeline-automation",
       "title": "CI/CD：工程化能力，自动化流水线建设"
+    },
+    {
+      "date": "2026-04-22",
+      "slug": "sandbox-combined-practice",
+      "title": "Sandbox 组合实践：浏览器隔离与云端沙箱的协同"
     }
   ]
 }
