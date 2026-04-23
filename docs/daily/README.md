@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-23
+
+- [容器与 Kubernetes 入门：Docker + Deployment/Service/Ingress 的最小闭环](./2026-04-23-k8s-minimal-loop.md) - 从零跑通 K8s 部署完整链路：Docker 镜像构建、Deployment 副本管理、Service 服务发现、Ingress 对外暴露，含 Node.js 应用完整示例与排查清单
+
 ## 2026-04-22
 
 - [Sandbox 组合实践：浏览器隔离与云端沙箱的协同](./2026-04-22-sandbox-combined-practice.md) - 分层沙箱架构实战：前端 iframe+CSP 快速过滤 + 云端容器强隔离执行，含在线代码编辑器完整示例与安全检查清单
@@ -66,4 +70,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-22*
+*自动更新，最后生成时间：2026-04-23*

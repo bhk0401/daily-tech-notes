@@ -1,6 +1,6 @@
 {
-  "lastIndex": 1,
-  "lastRun": "2026-04-22T01:30:00Z",
+  "lastIndex": 2,
+  "lastRun": "2026-04-23T01:30:00Z",
   "history": [
     {
       "date": "2026-04-08",
@@ -71,6 +71,11 @@
       "date": "2026-04-22",
       "slug": "sandbox-combined-practice",
       "title": "Sandbox 组合实践：浏览器隔离与云端沙箱的协同"
+    },
+    {
+      "date": "2026-04-23",
+      "slug": "k8s-minimal-loop",
+      "title": "容器与 Kubernetes 入门：Docker + Deployment/Service/Ingress 的最小闭环"
     }
   ]
 }
