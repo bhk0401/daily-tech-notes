@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-25
+
+- [从 Docker 到 Kubernetes：Deployment/Service/Ingress 的最小闭环](./2026-04-25-docker-to-k8s-loop.md) - 从零跑通 K8s 部署完整链路：Docker 镜像构建、Deployment 副本管理、Service 服务发现、Ingress 对外暴露，含 Node.js 应用完整示例与排查清单
+
 ## 2026-04-24
 
 - [容器基础：镜像分层、构建缓存与多阶段 Dockerfile](./2026-04-24-docker-multistage-build.md) - 深入理解 Docker 镜像分层机制，掌握构建缓存策略与多阶段构建技术，将生产镜像体积缩小 50%-90%，含 Node.js/Go 完整优化示例与排查清单
@@ -74,4 +78,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-24*
+*自动更新，最后生成时间：2026-04-25*
