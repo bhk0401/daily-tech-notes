@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-26
+
+- [实战入门：用 Docker 构建镜像，并在 Kubernetes 通过 Deployment/Service/Ingress 跑通最小闭环](./2026-04-26-docker-k8s-hands-on.md) - 30 分钟跑通云原生最小闭环：Docker 镜像构建、K8s Deployment/Service/Ingress 完整配置，含 Node.js 应用示例与故障排查清单
+
 ## 2026-04-25
 
 - [从 Docker 到 Kubernetes：Deployment/Service/Ingress 的最小闭环](./2026-04-25-docker-to-k8s-loop.md) - 从零跑通 K8s 部署完整链路：Docker 镜像构建、Deployment 副本管理、Service 服务发现、Ingress 对外暴露，含 Node.js 应用完整示例与排查清单
@@ -78,4 +82,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-25*
+*自动更新，最后生成时间：2026-04-26*
