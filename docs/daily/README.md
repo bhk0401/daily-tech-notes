@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-27
+
+- [Kubernetes 入门：Deployment/Service/Ingress 的最小闭环](./2026-04-27-k8s-minimal-loop-complete.md) - 深入理解 K8s 三大核心资源对象，通过完整示例跑通应用部署、服务发现与 HTTP 路由的完整闭环，含故障排查清单与最佳实践
+
 ## 2026-04-26
 
 - [实战入门：用 Docker 构建镜像，并在 Kubernetes 通过 Deployment/Service/Ingress 跑通最小闭环](./2026-04-26-docker-k8s-hands-on.md) - 30 分钟跑通云原生最小闭环：Docker 镜像构建、K8s Deployment/Service/Ingress 完整配置，含 Node.js 应用示例与故障排查清单
@@ -82,4 +86,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-26*
+*自动更新，最后生成时间：2026-04-27*
