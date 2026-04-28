@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-28
+
+- [API Gateway：鉴权、限流、灰度发布的实现思路](./2026-04-28-api-gateway-auth-rate-limit-canary-practice.md) - Kong Gateway 生产级实践：JWT 鉴权、令牌桶限流、灰度发布流量分流，含完整 Docker 部署示例与故障排查清单
+
 ## 2026-04-27
 
 - [Kubernetes 入门：Deployment/Service/Ingress 的最小闭环](./2026-04-27-k8s-minimal-loop-complete.md) - 深入理解 K8s 三大核心资源对象，通过完整示例跑通应用部署、服务发现与 HTTP 路由的完整闭环，含故障排查清单与最佳实践
@@ -86,4 +90,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-27*
+*自动更新，最后生成时间：2026-04-28*
