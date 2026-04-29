@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-29
+
+- [AI 工程化：RAG 的数据切分、召回与评测](./2026-04-29-ai-rag-chunking-retrieval-eval.md) - 深入 RAG 系统核心：递归切分策略、向量检索优化、Prompt 设计要点，含 LangChain + FAISS 完整可运行示例与性能调优指南
+
 ## 2026-04-28
 
 - [API Gateway：鉴权、限流、灰度发布的实现思路](./2026-04-28-api-gateway-auth-rate-limit-canary-practice.md) - Kong Gateway 生产级实践：JWT 鉴权、令牌桶限流、灰度发布流量分流，含完整 Docker 部署示例与故障排查清单
@@ -90,4 +94,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-28*
+*自动更新，最后生成时间：2026-04-29*
