@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-04-30
+
+- [Serverless 容器平台：Cloud Run / Fargate 的零运维部署实践](./2026-04-30-serverless-container-cloud-run-fargate.md) - 从 K8s 运维复杂度中解脱，掌握 Cloud Run 和 Fargate 的架构差异、部署实战与生产级最佳实践，含冷启动优化、数据库连接池、VPC 集成等完整解决方案
+
 ## 2026-04-29
 
 - [AI 工程化：RAG 的数据切分、召回与评测](./2026-04-29-ai-rag-chunking-retrieval-eval.md) - 深入 RAG 系统核心：递归切分策略、向量检索优化、Prompt 设计要点，含 LangChain + FAISS 完整可运行示例与性能调优指南
@@ -94,4 +98,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-29*
+*自动更新，最后生成时间：2026-04-30*
