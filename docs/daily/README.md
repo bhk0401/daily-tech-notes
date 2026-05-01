@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-01
+
+- [API Gateway 进阶：熔断、重试与超时策略的生产级实践](./2026-05-01-api-gateway-circuit-breaker-retry-timeout.md) - 从基础限流鉴权到高可用架构：掌握熔断器模式（Closed/Open/Half-Open）、指数退避重试、分层超时控制，含 Kong/Envoy 配置示例与 Node.js 完整实现，附重试风暴防护与幂等性设计指南
+
 ## 2026-04-30
 
 - [Serverless 容器平台：Cloud Run / Fargate 的零运维部署实践](./2026-04-30-serverless-container-cloud-run-fargate.md) - 从 K8s 运维复杂度中解脱，掌握 Cloud Run 和 Fargate 的架构差异、部署实战与生产级最佳实践，含冷启动优化、数据库连接池、VPC 集成等完整解决方案
@@ -98,4 +102,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-04-30*
+*自动更新，最后生成时间：2026-05-01*
