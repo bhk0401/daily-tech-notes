@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-02
+
+- [边缘计算实战：Cloudflare Workers 与 Deno Deploy 对比与迁移指南](./2026-05-02-edge-computing-workers-deno-migration.md) - 边缘计算平台深度对比：Cloudflare Workers vs Deno Deploy，涵盖运行时差异、部署流程、定价模型，含边缘 API 网关完整实现（请求转换 + 地理围栏 + 限流）与双向迁移指南
+
 ## 2026-05-01
 
 - [API Gateway 进阶：熔断、重试与超时策略的生产级实践](./2026-05-01-api-gateway-circuit-breaker-retry-timeout.md) - 从基础限流鉴权到高可用架构：掌握熔断器模式（Closed/Open/Half-Open）、指数退避重试、分层超时控制，含 Kong/Envoy 配置示例与 Node.js 完整实现，附重试风暴防护与幂等性设计指南
@@ -102,4 +106,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-01*
+*自动更新，最后生成时间：2026-05-02*
