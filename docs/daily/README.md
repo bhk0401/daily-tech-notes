@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-03
+
+- [容器安全：镜像扫描、运行时防护与供应链安全](./2026-05-03-container-security-scanning-supply-chain.md) - 建立完整的容器安全防线：Trivy 漏洞扫描、Cosign 镜像签名验证、Kubernetes 安全上下文配置、NetworkPolicy 网络隔离，含 CI/CD 安全门禁实战与供应链安全最佳实践
+
 ## 2026-05-02
 
 - [边缘计算实战：Cloudflare Workers 与 Deno Deploy 对比与迁移指南](./2026-05-02-edge-computing-workers-deno-migration.md) - 边缘计算平台深度对比：Cloudflare Workers vs Deno Deploy，涵盖运行时差异、部署流程、定价模型，含边缘 API 网关完整实现（请求转换 + 地理围栏 + 限流）与双向迁移指南
@@ -106,4 +110,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-02*
+*自动更新，最后生成时间：2026-05-03*
