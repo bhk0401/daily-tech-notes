@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-04
+
+- [OpenTelemetry 全栈可观测性：Metrics、Tracing、Logging 统一实践](./2026-05-04-opentelemetry-fullstack-observability.md) - 构建统一可观测性体系：OpenTelemetry 核心架构、Node.js/前端埋点实战、Collector 配置与数据导出，含 Docker Compose 完整部署示例与 Trace-Log 关联方案
+
 ## 2026-05-03
 
 - [容器安全：镜像扫描、运行时防护与供应链安全](./2026-05-03-container-security-scanning-supply-chain.md) - 建立完整的容器安全防线：Trivy 漏洞扫描、Cosign 镜像签名验证、Kubernetes 安全上下文配置、NetworkPolicy 网络隔离，含 CI/CD 安全门禁实战与供应链安全最佳实践
@@ -110,4 +114,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-03*
+*自动更新，最后生成时间：2026-05-04*
