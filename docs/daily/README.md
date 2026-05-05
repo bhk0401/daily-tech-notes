@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-05
+
+- [LLM Ops：模型服务化与推理优化实战](./2026-05-05-llm-ops-model-serving-inference.md) - 从实验到生产：掌握 vLLM/TGI/TensorRT-LLM 推理框架选型、KV Cache 优化、量化部署、并发批处理，含 Docker Compose 完整部署示例与 OpenAI 兼容 API 调用指南
+
 ## 2026-05-04
 
 - [OpenTelemetry 全栈可观测性：Metrics、Tracing、Logging 统一实践](./2026-05-04-opentelemetry-fullstack-observability.md) - 构建统一可观测性体系：OpenTelemetry 核心架构、Node.js/前端埋点实战、Collector 配置与数据导出，含 Docker Compose 完整部署示例与 Trace-Log 关联方案
@@ -114,4 +118,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-04*
+*自动更新，最后生成时间：2026-05-05*
