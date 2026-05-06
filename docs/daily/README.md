@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-06
+
+- [Feature Flags 与 A/B 测试基础设施：从灰度发布到数据驱动决策](./2026-05-06-feature-flags-ab-testing-infrastructure.md) - 构建生产级功能开关体系：OpenFeature 标准、Flagd 服务部署、一致性哈希算法、A/B 测试统计分析，含 React SDK 集成、Docker Compose 完整部署示例与实验效果分析实战
+
 ## 2026-05-05
 
 - [LLM Ops：模型服务化与推理优化实战](./2026-05-05-llm-ops-model-serving-inference.md) - 从实验到生产：掌握 vLLM/TGI/TensorRT-LLM 推理框架选型、KV Cache 优化、量化部署、并发批处理，含 Docker Compose 完整部署示例与 OpenAI 兼容 API 调用指南
@@ -118,4 +122,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-05*
+*自动更新，最后生成时间：2026-05-06*
