@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-07
+
+- [Container Networking & Service Mesh 基础：从 Docker 网络到 Istio 服务网格](./2026-05-07-container-networking-service-mesh-basics.md) - 深入理解容器网络模型：Docker bridge/overlay 网络、Kubernetes CNI/Service/NetworkPolicy、Istio 服务网格流量治理，含网络隔离测试、灰度发布配置示例与故障排查清单
+
 ## 2026-05-06
 
 - [Feature Flags 与 A/B 测试基础设施：从灰度发布到数据驱动决策](./2026-05-06-feature-flags-ab-testing-infrastructure.md) - 构建生产级功能开关体系：OpenFeature 标准、Flagd 服务部署、一致性哈希算法、A/B 测试统计分析，含 React SDK 集成、Docker Compose 完整部署示例与实验效果分析实战
@@ -122,4 +126,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-06*
+*自动更新，最后生成时间：2026-05-07*
