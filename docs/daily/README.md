@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-08
+
+- [Message Queues 异步处理实战：Kafka vs RabbitMQ vs Redis Streams](./2026-05-08-message-queues-async-processing.md) - 深入对比三种主流消息队列架构：RabbitMQ 经典队列、Kafka 分布式日志流、Redis Streams 轻量流处理，涵盖选型决策矩阵、Node.js 完整集成示例、消息丢失/重复/积压排查指南与生产级配置清单
+
 ## 2026-05-07
 
 - [Container Networking & Service Mesh 基础：从 Docker 网络到 Istio 服务网格](./2026-05-07-container-networking-service-mesh-basics.md) - 深入理解容器网络模型：Docker bridge/overlay 网络、Kubernetes CNI/Service/NetworkPolicy、Istio 服务网格流量治理，含网络隔离测试、灰度发布配置示例与故障排查清单
@@ -126,4 +130,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-07*
+*自动更新，最后生成时间：2026-05-08*
