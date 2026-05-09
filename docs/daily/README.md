@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-09
+
+- [WebSocket 实时通信实战：从协议原理到生产级架构](./2026-05-09-websocket-realtime-communication.md) - 深入理解 WebSocket 全双工通信协议：握手流程、数据帧结构、心跳保活机制，掌握 Node.js + ws 库生产级实现，涵盖连接管理、断线重连、Nginx 反向代理配置与安全加固清单
+
 ## 2026-05-08
 
 - [Message Queues 异步处理实战：Kafka vs RabbitMQ vs Redis Streams](./2026-05-08-message-queues-async-processing.md) - 深入对比三种主流消息队列架构：RabbitMQ 经典队列、Kafka 分布式日志流、Redis Streams 轻量流处理，涵盖选型决策矩阵、Node.js 完整集成示例、消息丢失/重复/积压排查指南与生产级配置清单
@@ -130,4 +134,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-08*
+*自动更新，最后生成时间：2026-05-09*
