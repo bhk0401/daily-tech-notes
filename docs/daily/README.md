@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-10
+
+- [Testing Pyramid 实战：E2E、集成测试与单元测试的正确分层](./2026-05-10-testing-pyramid-e2e-integration-unit.md) - 建立科学的测试分层体系：掌握测试金字塔核心原则（70% 单元/20% 集成/10% E2E），使用 Vitest/Testing Library/Playwright 编写高质量测试，涵盖 Testcontainers 集成测试、E2E 稳定性优化、常见测试陷阱排查与生产级配置清单
+
 ## 2026-05-09
 
 - [WebSocket 实时通信实战：从协议原理到生产级架构](./2026-05-09-websocket-realtime-communication.md) - 深入理解 WebSocket 全双工通信协议：握手流程、数据帧结构、心跳保活机制，掌握 Node.js + ws 库生产级实现，涵盖连接管理、断线重连、Nginx 反向代理配置与安全加固清单
@@ -134,4 +138,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-09*
+*自动更新，最后生成时间：2026-05-10*
