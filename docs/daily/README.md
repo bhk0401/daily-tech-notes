@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-11
+
+- [前端性能优化：Core Web Vitals 实战指南](./2026-05-11-core-web-vitals-optimization.md) - 深入理解 LCP/INP/CLS 三大核心指标：掌握 Web Vitals 库监控、Lighthouse 性能审计、图片预加载/懒加载优化、长任务拆分与 Web Worker 实践，涵盖字体加载 CLS 优化、性能预算 CI 集成、真实用户监控 (RUM) 与告警体系
+
 ## 2026-05-10
 
 - [Testing Pyramid 实战：E2E、集成测试与单元测试的正确分层](./2026-05-10-testing-pyramid-e2e-integration-unit.md) - 建立科学的测试分层体系：掌握测试金字塔核心原则（70% 单元/20% 集成/10% E2E），使用 Vitest/Testing Library/Playwright 编写高质量测试，涵盖 Testcontainers 集成测试、E2E 稳定性优化、常见测试陷阱排查与生产级配置清单
