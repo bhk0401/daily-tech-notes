@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-14
+
+- [GitOps 实战：用 ArgoCD 实现 Kubernetes 持续部署](./2026-05-14-gitops-argocd-continuous-deployment.md) - 深入理解 GitOps 四大原则与 ArgoCD 架构，掌握声明式持续部署最佳实践，含 Kustomize 多环境配置、Image Updater 自动镜像更新、同步钩子（Sync Hooks）完整示例与生产级排查清单
+
 ## 2026-05-13
 
 - [OAuth2 & OIDC 认证：从协议原理到生产级实践](./2026-05-13-oauth2-oidc-authentication-production.md) - 深入理解 OAuth2 授权框架与 OIDC 身份层核心差异，掌握授权码流程、JWT 验证、令牌刷新、PKCE 安全加固，含 Node.js + Keycloak 完整实现示例、多身份提供商集成方案与生产级排查清单
@@ -150,4 +154,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-13*
+*自动更新，最后生成时间：2026-05-14*
