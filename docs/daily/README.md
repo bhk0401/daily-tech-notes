@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-15
+
+- [缓存策略全解析：Redis、CDN 与边缘缓存的高性能实践](./2026-05-15-caching-strategies-redis-cdn-edge.md) - 系统掌握三层缓存架构（Redis 应用层/CDN 静态资源/边缘计算），深入理解 Cache-Aside/Write-Through 一致性模型、穿透/击穿/雪崩防护策略，含 Node.js + ioredis 逻辑过期实现、Cloudflare Workers 边缘缓存、Nginx CDN 配置与生产级监控告警清单
+
 ## 2026-05-14
 
 - [GitOps 实战：用 ArgoCD 实现 Kubernetes 持续部署](./2026-05-14-gitops-argocd-continuous-deployment.md) - 深入理解 GitOps 四大原则与 ArgoCD 架构，掌握声明式持续部署最佳实践，含 Kustomize 多环境配置、Image Updater 自动镜像更新、同步钩子（Sync Hooks）完整示例与生产级排查清单
