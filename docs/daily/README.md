@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-16
+
+- [WebAssembly 实战：浏览器与边缘计算的高性能方案](./2026-05-16-wasm-browser-edge-computing.md) - 深入理解 WASM 二进制格式与线性内存模型，掌握 Rust + wasm-pack 工具链，实现浏览器端图像实时滤镜处理（灰度/反色/模糊），性能提升 5-6 倍，涵盖边缘计算平台（Cloudflare Workers/Fastly）部署实践、内存泄漏排查与生产级 Checklist
+
 ## 2026-05-15
 
 - [缓存策略全解析：Redis、CDN 与边缘缓存的高性能实践](./2026-05-15-caching-strategies-redis-cdn-edge.md) - 系统掌握三层缓存架构（Redis 应用层/CDN 静态资源/边缘计算），深入理解 Cache-Aside/Write-Through 一致性模型、穿透/击穿/雪崩防护策略，含 Node.js + ioredis 逻辑过期实现、Cloudflare Workers 边缘缓存、Nginx CDN 配置与生产级监控告警清单
