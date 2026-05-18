@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-18
+
+- [API 设计：REST vs GraphQL vs gRPC — 选型指南与实战对比](./2026-05-18-api-design-rest-graphql-grpc-comparison.md) - 深入对比三种主流 API 风格：REST 资源导向范式、GraphQL 按需查询方案、gRPC 高性能 RPC 框架，涵盖核心概念矩阵、Node.js 完整实现示例（Express/Apollo/gRPC-js）、N+1 查询/深度嵌套/Protobuf 兼容性等常见陷阱排查与生产级选型 Checklist
+
 ## 2026-05-17
 
 - [Infrastructure as Code：Terraform 基础与最佳实践](./2026-05-17-infrastructure-as-code-terraform-basics.md) - 掌握 Terraform 声明式基础设施管理核心概念（Provider/Resource/State/Module），含 S3 存储桶完整示例（版本控制/加密/生命周期策略），涵盖状态锁冲突、敏感信息泄露、依赖顺序错误等常见排障场景与生产级部署清单
