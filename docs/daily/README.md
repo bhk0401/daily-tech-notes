@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-19
+
+- [Secrets Management 云原生实践：从环境变量到 HashiCorp Vault](./2026-05-19-secrets-management-cloud-native.md) - 建立云原生密钥管理体系：Secrets 分级分类、Kubernetes External Secrets Operator 集成 AWS Secrets Manager、HashiCorp Vault 动态数据库凭证实战，涵盖 etcd 加密配置、令牌续期监控、多环境隔离等生产级方案与合规审计清单
+
 ## 2026-05-18
 
 - [API 设计：REST vs GraphQL vs gRPC — 选型指南与实战对比](./2026-05-18-api-design-rest-graphql-grpc-comparison.md) - 深入对比三种主流 API 风格：REST 资源导向范式、GraphQL 按需查询方案、gRPC 高性能 RPC 框架，涵盖核心概念矩阵、Node.js 完整实现示例（Express/Apollo/gRPC-js）、N+1 查询/深度嵌套/Protobuf 兼容性等常见陷阱排查与生产级选型 Checklist
@@ -170,4 +174,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-14*
+*自动更新，最后生成时间：2026-05-19*
