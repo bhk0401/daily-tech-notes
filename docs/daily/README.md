@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-21
+
+- [数据库连接池实战：Serverless 与容器环境的连接管理](./2026-05-21-database-connection-pooling-serverless.md) - 解决云原生应用中最常见的性能瓶颈：数据库连接管理。深入理解连接池核心原理，掌握 Node.js/Python/Go 生产级配置，解决 Serverless 冷启动连接复用难题，含 RDS Proxy 集成方案、连接泄漏排查、Kubernetes 多 Pod 连接数爆炸防护与完整监控告警体系
+
 ## 2026-05-19
 
 - [Secrets Management 云原生实践：从环境变量到 HashiCorp Vault](./2026-05-19-secrets-management-cloud-native.md) - 建立云原生密钥管理体系：Secrets 分级分类、Kubernetes External Secrets Operator 集成 AWS Secrets Manager、HashiCorp Vault 动态数据库凭证实战，涵盖 etcd 加密配置、令牌续期监控、多环境隔离等生产级方案与合规审计清单
@@ -174,4 +178,4 @@
 
 ---
 
-*自动更新，最后生成时间：2026-05-19*
+*自动更新，最后生成时间：2026-05-21*
