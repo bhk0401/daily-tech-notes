@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-22
+
+- [LLM Prompt Engineering：结构化提示词与 Few-Shot 实践](./2026-05-22-llm-prompt-engineering-few-shot.md) - 系统掌握提示词工程核心方法论：结构化提示词设计框架（角色/任务/上下文/约束/格式）、Few-Shot Learning 原理与实践，含情感分析/代码生成完整示例、Python 测试脚本与生产级优化 Checklist
+
 ## 2026-05-21
 
 - [数据库连接池实战：Serverless 与容器环境的连接管理](./2026-05-21-database-connection-pooling-serverless.md) - 解决云原生应用中最常见的性能瓶颈：数据库连接管理。深入理解连接池核心原理，掌握 Node.js/Python/Go 生产级配置，解决 Serverless 冷启动连接复用难题，含 RDS Proxy 集成方案、连接泄漏排查、Kubernetes 多 Pod 连接数爆炸防护与完整监控告警体系
