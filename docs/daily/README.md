@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-23
+
+- [Progressive Web Apps (PWA)：离线优先的渐进式应用实践](./2026-05-23-pwa-offline-first-progressive-apps.md) - 深入理解 PWA 三大核心技术（Service Worker/Web App Manifest/HTTPS），掌握缓存优先/网络优先/Stale-While-Revalidate 策略，含完整离线示例代码、iOS Safari 兼容性处理、缓存泄漏排查与生产级部署 Checklist
+
 ## 2026-05-22
 
 - [LLM Prompt Engineering：结构化提示词与 Few-Shot 实践](./2026-05-22-llm-prompt-engineering-few-shot.md) - 系统掌握提示词工程核心方法论：结构化提示词设计框架（角色/任务/上下文/约束/格式）、Few-Shot Learning 原理与实践，含情感分析/代码生成完整示例、Python 测试脚本与生产级优化 Checklist
