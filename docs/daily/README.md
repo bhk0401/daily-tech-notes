@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-24
+
+- [数据库迁移实战：生产环境零停机迁移策略](./2026-05-24-database-migration-zero-downtime.md) - 深入解析生产环境数据库 schema 变更的零停机迁移策略，涵盖扩展/收缩模式、向后兼容原则、数据双写迁移、在线 DDL 工具选型（gh-ost/pt-osc）与回滚方案设计，含 MySQL/PostgreSQL 完整示例与生产级迁移 Checklist
+
 ## 2026-05-23
 
 - [Progressive Web Apps (PWA)：离线优先的渐进式应用实践](./2026-05-23-pwa-offline-first-progressive-apps.md) - 深入理解 PWA 三大核心技术（Service Worker/Web App Manifest/HTTPS），掌握缓存优先/网络优先/Stale-While-Revalidate 策略，含完整离线示例代码、iOS Safari 兼容性处理、缓存泄漏排查与生产级部署 Checklist
