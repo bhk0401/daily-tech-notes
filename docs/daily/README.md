@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-25
+
+- [API Rate Limiting Algorithms：Token Bucket vs Leaky Bucket vs Sliding Window 实战对比](./2026-05-25-api-rate-limiting-algorithms.md) - 深入解析三种主流限流算法的核心原理、适用场景与生产级实现，涵盖 Redis 分布式限流、Nginx 配置实践与突发流量防护策略
+
 ## 2026-05-24
 
 - [数据库迁移实战：生产环境零停机迁移策略](./2026-05-24-database-migration-zero-downtime.md) - 深入解析生产环境数据库 schema 变更的零停机迁移策略，涵盖扩展/收缩模式、向后兼容原则、数据双写迁移、在线 DDL 工具选型（gh-ost/pt-osc）与回滚方案设计，含 MySQL/PostgreSQL 完整示例与生产级迁移 Checklist
