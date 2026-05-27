@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-27
+
+- [GraphQL Subscriptions 实战：实时数据推送与 WebSocket 集成](./2026-05-27-graphql-subscriptions-realtime.md) - 深入理解 GraphQL Subscriptions 核心机制，掌握 Apollo Server + graphql-ws 生产级实现，涵盖连接认证、消息过滤、Redis PubSub 集成、断线重连与性能优化，含完整聊天系统示例代码与部署 Checklist
+
 ## 2026-05-26
 
 - [边缘数据库与 Local-First 架构：Cloudflare D1/Turso 实战](./2026-05-26-edge-database-local-first-architecture.md) - 深入解析边缘数据库核心架构与 Local-First 设计原则，掌握 Cloudflare D1 + Workers 边缘博客系统完整实现、Turso 本地同步实战方案，涵盖写后读一致性、多设备冲突处理、连接数限制等生产级排障指南与部署 Checklist
