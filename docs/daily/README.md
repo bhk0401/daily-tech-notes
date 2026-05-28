@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-28
+
+- [Kubernetes Autoscaling 实战：HPA、VPA 与 KEDA 的生产级实践](./2026-05-28-kubernetes-autoscaling-hpa-vpa-keda.md) - 深入理解 Kubernetes 三大自动扩缩容机制，掌握基于 CPU/内存的 HPA 配置、垂直扩缩容 VPA 适用场景、以及基于事件的 KEDA 弹性方案，构建成本优化与高可用并重的生产级自动扩缩容体系
+
 ## 2026-05-27
 
 - [GraphQL Subscriptions 实战：实时数据推送与 WebSocket 集成](./2026-05-27-graphql-subscriptions-realtime.md) - 深入理解 GraphQL Subscriptions 核心机制，掌握 Apollo Server + graphql-ws 生产级实现，涵盖连接认证、消息过滤、Redis PubSub 集成、断线重连与性能优化，含完整聊天系统示例代码与部署 Checklist
