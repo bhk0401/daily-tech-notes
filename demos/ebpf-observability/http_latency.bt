@@ -1,0 +1,13 @@
+#!/usr/bin/env bpftrace
+// http_latency.bt - 追踪 HTTP 请求延迟
+// 使用方法：sudo bpftrace http_latency.bt
+
+kprobe:tcp_connect {
+    @start[tid] = nsecs;
+}
+
+kretprobe:tcp_recvmsg /@start[tid]/ {
+    $latency = (nsecs - @start[tid]) / 1000000;
+    printf("PID %d: HTTP request latency = %d ms\n", pid, $latency);
+    delete(@start[tid]);
+}

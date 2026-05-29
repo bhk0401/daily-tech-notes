@@ -1,0 +1,66 @@
+# Cilium Hubble Helm Chart Values
+# 用于 K8s 网络可观测性
+# 安装：helm install hubble cilium/hubble -f k8s-hubble-values.yaml -n kube-system
+
+hubble:
+  enabled: true
+  relay:
+    enabled: true
+    replicas: 1
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
+      limits:
+        cpu: 500m
+        memory: 256Mi
+  ui:
+    enabled: true
+    replicas: 1
+    service:
+      type: ClusterIP
+    ingress:
+      enabled: false
+    resources:
+      requests:
+        cpu: 100m
+        memory: 64Mi
+      limits:
+        cpu: 200m
+        memory: 128Mi
+  metrics:
+    enabled:
+      - dns:query
+      - http:method
+      - http:path
+      - http:status
+      - http:latency
+      - tcp:connections
+      - tcp:retransmit
+      - flow:protocol
+      - icmp:types
+    serviceMonitor:
+      enabled: true
+      namespace: kube-system
+    dashboards:
+      enabled: true
+      namespace: kube-system
+  exporter:
+    enabled: true
+    resources:
+      requests:
+        cpu: 100m
+        memory: 128Mi
+      limits:
+        cpu: 200m
+        memory: 256Mi
+
+cilium:
+  hubble:
+    enabled: true
+    metrics:
+      enabled:
+        - dns:query
+        - http:method
+        - http:path
+        - tcp:connections

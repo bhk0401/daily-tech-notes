@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-29
+
+- [eBPF 云原生可观测性：无需改代码的深度监控](./2026-05-29-ebpf-cloud-native-observability.md) - 深入理解 eBPF 核心原理与云原生可观测性实践，掌握 bpftrace/bcc/Cilium Hubble 工具链，涵盖 HTTP 延迟追踪、TCP 连接分析、K8s 网络可视化完整示例，含内核兼容性、性能优化、权限配置等生产级排障指南
+
 ## 2026-05-28
 
 - [Kubernetes Autoscaling 实战：HPA、VPA 与 KEDA 的生产级实践](./2026-05-28-kubernetes-autoscaling-hpa-vpa-keda.md) - 深入理解 Kubernetes 三大自动扩缩容机制，掌握基于 CPU/内存的 HPA 配置、垂直扩缩容 VPA 适用场景、以及基于事件的 KEDA 弹性方案，构建成本优化与高可用并重的生产级自动扩缩容体系
