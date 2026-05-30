@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-30
+
+- [Microservices Patterns 实战：Saga、CQRS 与 Event Sourcing 的生产级实践](./2026-05-30-microservices-patterns-saga-cqrs-event-sourcing.md) - 深入理解分布式系统三大核心架构模式，掌握 Saga 分布式事务两种实现策略（编排式/编舞式）、CQRS 读写分离模型设计、Event Sourcing 事件溯源与快照优化，含 Node.js/TypeScript 完整代码示例与生产级部署 Checklist
+
 ## 2026-05-29
 
 - [eBPF 云原生可观测性：无需改代码的深度监控](./2026-05-29-ebpf-cloud-native-observability.md) - 深入理解 eBPF 核心原理与云原生可观测性实践，掌握 bpftrace/bcc/Cilium Hubble 工具链，涵盖 HTTP 延迟追踪、TCP 连接分析、K8s 网络可视化完整示例，含内核兼容性、性能优化、权限配置等生产级排障指南
