@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-05-31
+
+- [gRPC for Microservices：Protocol Buffers、Streaming 与负载均衡生产级实践](./2026-05-31-grpc-microservices-protobuf-streaming.md) - 深入理解 gRPC 高性能 RPC 框架核心机制，掌握 Protocol Buffers 接口定义、四种 streaming 模式（一元/服务端流/客户端流/双向流）、客户端负载均衡策略，涵盖 Node.js/TypeScript 完整实现示例、连接超时/内存泄漏/负载均衡排查指南与生产级部署 Checklist
+
 ## 2026-05-30
 
 - [Microservices Patterns 实战：Saga、CQRS 与 Event Sourcing 的生产级实践](./2026-05-30-microservices-patterns-saga-cqrs-event-sourcing.md) - 深入理解分布式系统三大核心架构模式，掌握 Saga 分布式事务两种实现策略（编排式/编舞式）、CQRS 读写分离模型设计、Event Sourcing 事件溯源与快照优化，含 Node.js/TypeScript 完整代码示例与生产级部署 Checklist
