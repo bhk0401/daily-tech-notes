@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-01
+
+- [向量数据库选型与实战：RAG 系统的存储引擎](./2026-06-01-vector-database-rag-storage.md) - 深入理解向量数据库核心原理与选型方法，对比 ChromaDB/Qdrant/Weaviate/Milvus/Pinecone 五大主流方案，掌握 HNSW/IVF/PQ 索引调优、余弦相似度配置、批量插入优化，含 Python 完整实现示例、内存爆炸/维度不匹配/查询延迟排查指南与生产级部署 Checklist
+
 ## 2026-05-31
 
 - [gRPC for Microservices：Protocol Buffers、Streaming 与负载均衡生产级实践](./2026-05-31-grpc-microservices-protobuf-streaming.md) - 深入理解 gRPC 高性能 RPC 框架核心机制，掌握 Protocol Buffers 接口定义、四种 streaming 模式（一元/服务端流/客户端流/双向流）、客户端负载均衡策略，涵盖 Node.js/TypeScript 完整实现示例、连接超时/内存泄漏/负载均衡排查指南与生产级部署 Checklist
