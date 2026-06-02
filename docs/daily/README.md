@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-02
+
+- [Service Mesh Traffic Management：Istio 金丝雀发布与流量切分生产级实践](./2026-06-02-istio-traffic-management-canary.md) - 深入理解 Istio 流量管理核心资源（VirtualService/DestinationRule/Gateway），掌握基于权重的流量切分配置、基于 Header/Cookie 的精准路由，实现完整的金丝雀发布流程（5%→20%→50%→100%），涵盖连接池调优、异常检测配置、Envoy 配置同步排查与生产级部署 Checklist
+
 ## 2026-06-01
 
 - [向量数据库选型与实战：RAG 系统的存储引擎](./2026-06-01-vector-database-rag-storage.md) - 深入理解向量数据库核心原理与选型方法，对比 ChromaDB/Qdrant/Weaviate/Milvus/Pinecone 五大主流方案，掌握 HNSW/IVF/PQ 索引调优、余弦相似度配置、批量插入优化，含 Python 完整实现示例、内存爆炸/维度不匹配/查询延迟排查指南与生产级部署 Checklist
