@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-03
+
+- [API Gateway 生产级实战：鉴权、限流、灰度发布的完整实现](./2026-06-03-api-gateway-production-implementation.md) - 基于 Kong/Envoy 实现生产级 API Gateway，涵盖 JWT 鉴权配置、多级限流策略（全局/用户/API）、基于权重与 Header 的灰度发布方案，含 Docker Compose 本地开发与 Kubernetes 生产部署完整示例、监控告警规则配置、5 大常见坑排查指南与部署 Checklist
+
 ## 2026-06-02
 
 - [Service Mesh Traffic Management：Istio 金丝雀发布与流量切分生产级实践](./2026-06-02-istio-traffic-management-canary.md) - 深入理解 Istio 流量管理核心资源（VirtualService/DestinationRule/Gateway），掌握基于权重的流量切分配置、基于 Header/Cookie 的精准路由，实现完整的金丝雀发布流程（5%→20%→50%→100%），涵盖连接池调优、异常检测配置、Envoy 配置同步排查与生产级部署 Checklist

@@ -1,0 +1,71 @@
+version: '3.8'
+
+services:
+  kong-database:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_USER: kong
+      POSTGRES_DB: kong
+      POSTGRES_PASSWORD: kong_password
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U kong"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    volumes:
+      - kong_data:/var/lib/postgresql/data
+
+  kong-migrations:
+    image: kong:3.4
+    command: kong migrations bootstrap
+    depends_on:
+      kong-database:
+        condition: service_healthy
+    environment:
+      KONG_DATABASE: postgres
+      KONG_PG_HOST: kong-database
+      KONG_PG_USER: kong
+      KONG_PG_PASSWORD: kong_password
+
+  kong:
+    image: kong:3.4
+    ports:
+      - "8000:8000"
+      - "8443:8443"
+      - "8001:8001"
+    depends_on:
+      kong-migrations:
+        condition: service_completed_successfully
+    environment:
+      KONG_DATABASE: postgres
+      KONG_PG_HOST: kong-database
+      KONG_PG_USER: kong
+      KONG_PG_PASSWORD: kong_password
+      KONG_PROXY_ACCESS_LOG: /dev/stdout
+      KONG_ADMIN_ACCESS_LOG: /dev/stdout
+      KONG_PROXY_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_ERROR_LOG: /dev/stderr
+      KONG_ADMIN_LISTEN: 0.0.0.0:8001
+      KONG_PLUGINS: bundled,jwt,key-auth,rate-limiting,request-transformer
+    healthcheck:
+      test: ["CMD", "kong", "health"]
+      interval: 10s
+      timeout: 10s
+      retries: 10
+
+  user-service-v1:
+    image: nginx:alpine
+    volumes:
+      - ./nginx-v1.conf:/etc/nginx/conf.d/default.conf:ro
+    environment:
+      - SERVICE_VERSION=v1
+
+  user-service-v2:
+    image: nginx:alpine
+    volumes:
+      - ./nginx-v2.conf:/etc/nginx/conf.d/default.conf:ro
+    environment:
+      - SERVICE_VERSION=v2
+
+volumes:
+  kong_data:
