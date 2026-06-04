@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-04
+
+- [前端状态管理：从 Context 到 Signals 的现代模式对比](./2026-06-04-frontend-state-management-patterns.md) - 系统对比 React Context、Zustand、Jotai、Solid Signals 四大主流方案，深入解析核心原理与适用场景，提供电商购物车完整实现示例（3 种方案代码对比），涵盖过度重渲染/持久化兼容性/TypeScript 类型推断等 5 大常见坑排查指南与选型决策 Checklist
+
 ## 2026-06-03
 
 - [API Gateway 生产级实战：鉴权、限流、灰度发布的完整实现](./2026-06-03-api-gateway-production-implementation.md) - 基于 Kong/Envoy 实现生产级 API Gateway，涵盖 JWT 鉴权配置、多级限流策略（全局/用户/API）、基于权重与 Header 的灰度发布方案，含 Docker Compose 本地开发与 Kubernetes 生产部署完整示例、监控告警规则配置、5 大常见坑排查指南与部署 Checklist
