@@ -1,0 +1,49 @@
+# Compliant Pod for restricted PSS profile
+# All security contexts are properly configured
+apiVersion: v1
+kind: Pod
+metadata:
+  name: secure-app
+  namespace: secure-workload
+  labels:
+    app: secure-app
+    tier: backend
+spec:
+  containers:
+  - name: app
+    image: myregistry.com/app:v1.2.3
+    ports:
+    - containerPort: 8080
+    securityContext:
+      # Must run as non-root user
+      runAsNonRoot: true
+      runAsUser: 1000
+      runAsGroup: 1000
+      # Prevent privilege escalation
+      allowPrivilegeEscalation: false
+      # Read-only root filesystem
+      readOnlyRootFilesystem: true
+      # Drop all capabilities
+      capabilities:
+        drop: ["ALL"]
+      # Use default seccomp profile
+      seccompProfile:
+        type: RuntimeDefault
+    resources:
+      limits:
+        cpu: "500m"
+        memory: "256Mi"
+      requests:
+        cpu: "100m"
+        memory: "128Mi"
+    volumeMounts:
+    - name: tmp
+      mountPath: /tmp
+    - name: cache
+      mountPath: /var/cache
+  volumes:
+  # Use emptyDir instead of hostPath
+  - name: tmp
+    emptyDir: {}
+  - name: cache
+    emptyDir: {}

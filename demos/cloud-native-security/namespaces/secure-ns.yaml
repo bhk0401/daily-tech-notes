@@ -1,0 +1,24 @@
+# Pod Security Standards - Restricted Namespace
+# This namespace enforces the most restrictive PSS profile
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: secure-workload
+  labels:
+    # Enforce restricted policy - pods violating this will be rejected
+    pod-security.kubernetes.io/enforce: restricted
+    pod-security.kubernetes.io/enforce-version: latest
+    # Audit mode - violations are logged but allowed
+    pod-security.kubernetes.io/audit: restricted
+    pod-security.kubernetes.io/warn: restricted
+---
+# Baseline namespace for less restrictive workloads
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: baseline-workload
+  labels:
+    pod-security.kubernetes.io/enforce: baseline
+    pod-security.kubernetes.io/enforce-version: latest
+    pod-security.kubernetes.io/audit: restricted
+    pod-security.kubernetes.io/warn: restricted

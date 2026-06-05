@@ -1,0 +1,25 @@
+# VIOLATION Pod - This will be rejected by restricted PSS
+# Use this to test your Pod Security Admission configuration
+apiVersion: v1
+kind: Pod
+metadata:
+  name: violation-pod
+  namespace: secure-workload
+spec:
+  containers:
+  - name: nginx
+    image: nginx:latest
+    securityContext:
+      # VIOLATION: privileged container
+      privileged: true
+      # VIOLATION: running as root
+      runAsNonRoot: false
+      # VIOLATION: allows privilege escalation
+      allowPrivilegeEscalation: true
+      # VIOLATION: no capabilities dropped
+      capabilities:
+        add: ["NET_ADMIN"]
+# Expected error:
+# admission webhook "pod-security.kubernetes.io" denied the request:
+# would violate PodSecurity "restricted:latest": privileged=true, 
+# runAsNonRoot=false, allowPrivilegeEscalation=true, etc.

@@ -1,0 +1,11 @@
+# Constraint: Ingress Must Have TLS
+# All Ingress resources must configure TLS
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sIngressRequireTLS
+metadata:
+  name: require-ingress-tls
+spec:
+  match:
+    kinds:
+    - apiGroups: ["networking.k8s.io"]
+      kinds: ["Ingress"]

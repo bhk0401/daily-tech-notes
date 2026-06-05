@@ -1,0 +1,21 @@
+# Constraint: Allowed Container Registries
+# Only allows images from trusted registries
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sAllowedRepos
+metadata:
+  name: whitelist-allowed-repos
+spec:
+  match:
+    kinds:
+    - apiGroups: [""]
+      kinds: ["Pod"]
+    - apiGroups: ["apps"]
+      kinds: ["Deployment", "StatefulSet", "DaemonSet", "ReplicaSet"]
+    - apiGroups: ["batch"]
+      kinds: ["Job", "CronJob"]
+  parameters:
+    repos:
+    - "myregistry.com/"
+    - "gcr.io/myproject/"
+    - "docker.io/library/"  # Only official Docker images
+    - "quay.io/"

@@ -1,0 +1,28 @@
+# ConstraintTemplate: K8sIngressRequireTLS
+# Requires all Ingress resources to have TLS configured
+apiVersion: templates.gatekeeper.sh/v1
+kind: ConstraintTemplate
+metadata:
+  name: k8singressrequiretls
+  annotations:
+    description: "Requires all Ingress resources to have TLS configured"
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sIngressRequireTLS
+  targets:
+  - target: admission.k8s.gatekeeper.sh
+    rego: |
+      package k8singressrequiretls
+
+      violation[{"msg": msg}] {
+        not input.review.object.spec.tls
+        msg := "Ingress must have TLS configured"
+      }
+
+      violation[{"msg": msg}] {
+        tls := input.review.object.spec.tls[_]
+        not tls.secretName
+        msg := "Ingress TLS must have a secretName configured"
+      }

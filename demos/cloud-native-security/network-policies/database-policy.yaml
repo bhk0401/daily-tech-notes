@@ -1,0 +1,27 @@
+# Database Network Policy
+# Most restrictive - only allows ingress from backend, no egress
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: database-policy
+  namespace: production
+spec:
+  podSelector:
+    matchLabels:
+      app: database
+      tier: data
+  policyTypes:
+  - Ingress
+  ingress:
+  # Allow traffic from backend only
+  - from:
+    - podSelector:
+        matchLabels:
+          app: backend
+          tier: api
+    ports:
+    - protocol: TCP
+      port: 5432
+    - protocol: TCP
+      port: 3306
+  # No egress rules - database should not initiate connections

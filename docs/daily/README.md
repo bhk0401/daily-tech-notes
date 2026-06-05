@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-05
+
+- [Cloud Native Security Posture：Pod Security Standards、Network Policies 与 OPA/Gatekeeper 生产级实践](./2026-06-05-cloud-native-security-pod-network-opa.md) - 构建 Kubernetes 运行时安全三层防御体系：PSS 基线阻止危险配置、Network Policies 实现网络微隔离、OPA/Gatekeeper 策略即代码统一治理，涵盖 privileged 容器逃逸防护、前端→后端→数据库流量隔离、镜像 registry 白名单等生产级场景，含完整 YAML 配置示例、测试脚本与部署 Checklist
+
 ## 2026-06-04
 
 - [前端状态管理：从 Context 到 Signals 的现代模式对比](./2026-06-04-frontend-state-management-patterns.md) - 系统对比 React Context、Zustand、Jotai、Solid Signals 四大主流方案，深入解析核心原理与适用场景，提供电商购物车完整实现示例（3 种方案代码对比），涵盖过度重渲染/持久化兼容性/TypeScript 类型推断等 5 大常见坑排查指南与选型决策 Checklist

@@ -1,0 +1,18 @@
+# Constraint: Required Resource Limits
+# All containers must have CPU and memory limits/requests
+apiVersion: constraints.gatekeeper.sh/v1beta1
+kind: K8sRequiredResources
+metadata:
+  name: require-resources
+spec:
+  match:
+    kinds:
+    - apiGroups: [""]
+      kinds: ["Pod"]
+    - apiGroups: ["apps"]
+      kinds: ["Deployment", "StatefulSet", "DaemonSet", "ReplicaSet"]
+  parameters:
+    cpuLimit: "2000m"
+    memoryLimit: "4Gi"
+    cpuRequest: "100m"
+    memoryRequest: "128Mi"
