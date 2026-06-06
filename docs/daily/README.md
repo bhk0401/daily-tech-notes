@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-06
+
+- [CDN Internals & Cache Invalidation Strategies：内容分发网络的缓存机制与失效策略生产级实践](./2026-06-06-cdn-internals-cache-invalidation.md) - 深入解析 CDN 多层缓存架构（Edge/Regional/Origin）与 Cache-Key 构成逻辑，掌握 Cloudflare Workers/AWS CloudFront/阿里云 CDN 三大平台缓存配置，涵盖 TTL 管理、主动 Purge、版本化方案对比，提供查询参数碎片化/Vary 头缓存爆炸/Cookie 污染等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-06-05
 
 - [Cloud Native Security Posture：Pod Security Standards、Network Policies 与 OPA/Gatekeeper 生产级实践](./2026-06-05-cloud-native-security-pod-network-opa.md) - 构建 Kubernetes 运行时安全三层防御体系：PSS 基线阻止危险配置、Network Policies 实现网络微隔离、OPA/Gatekeeper 策略即代码统一治理，涵盖 privileged 容器逃逸防护、前端→后端→数据库流量隔离、镜像 registry 白名单等生产级场景，含完整 YAML 配置示例、测试脚本与部署 Checklist
