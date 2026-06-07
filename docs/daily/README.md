@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-07
+
+- [Sandbox 安全隔离：浏览器沙箱与云端沙箱的协同实践](./2026-06-07-sandbox-security-isolation.md) - 深入探讨浏览器沙箱（iframe/postMessage/CSP）与云端沙箱（Docker/轻量 VM）的协同实践，掌握前端代码隔离三重防护机制、容器沙箱安全配置（非 root/只读挂载/能力限制）、完整的前后端通信架构，含 iframe 沙箱组件、Docker 执行器、资源泄露防护等生产级示例与部署 Checklist
+
 ## 2026-06-06
 
 - [CDN Internals & Cache Invalidation Strategies：内容分发网络的缓存机制与失效策略生产级实践](./2026-06-06-cdn-internals-cache-invalidation.md) - 深入解析 CDN 多层缓存架构（Edge/Regional/Origin）与 Cache-Key 构成逻辑，掌握 Cloudflare Workers/AWS CloudFront/阿里云 CDN 三大平台缓存配置，涵盖 TTL 管理、主动 Purge、版本化方案对比，提供查询参数碎片化/Vary 头缓存爆炸/Cookie 污染等 5 大常见坑排查指南与生产级部署 Checklist
