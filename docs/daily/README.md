@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-08
+
+- [React Server Components 实战：Streaming、Suspense Boundaries 与数据获取模式](./2026-06-08-react-server-components-streaming-suspense.md) - 深入理解 React Server Components 核心架构，掌握服务端流式渲染、Suspense Boundaries 精细控制与数据获取最佳实践，涵盖 async/await 直接获取/并行获取模式、电商产品页完整实现、bundle 膨胀/串行请求/CLS 布局偏移等 6 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-06-07
 
 - [Sandbox 安全隔离：浏览器沙箱与云端沙箱的协同实践](./2026-06-07-sandbox-security-isolation.md) - 深入探讨浏览器沙箱（iframe/postMessage/CSP）与云端沙箱（Docker/轻量 VM）的协同实践，掌握前端代码隔离三重防护机制、容器沙箱安全配置（非 root/只读挂载/能力限制）、完整的前后端通信架构，含 iframe 沙箱组件、Docker 执行器、资源泄露防护等生产级示例与部署 Checklist
