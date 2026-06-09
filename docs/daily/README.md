@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-09
+
+- [LLM Function Calling：生产环境的工具集成模式](./2026-06-09-llm-function-calling-production-patterns.md) - 深入解析 Function Calling 核心机制与 Schema 设计原则，掌握 OpenAI/Anthropic/Google 多平台协议差异，涵盖并行调用优化、循环调用陷阱、敏感操作保护等 5 大常见坑排查指南，提供 Python 完整实现示例与生产级部署 Checklist
+
 ## 2026-06-08
 
 - [React Server Components 实战：Streaming、Suspense Boundaries 与数据获取模式](./2026-06-08-react-server-components-streaming-suspense.md) - 深入理解 React Server Components 核心架构，掌握服务端流式渲染、Suspense Boundaries 精细控制与数据获取最佳实践，涵盖 async/await 直接获取/并行获取模式、电商产品页完整实现、bundle 膨胀/串行请求/CLS 布局偏移等 6 大常见坑排查指南与生产级部署 Checklist
