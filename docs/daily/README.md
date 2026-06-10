@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-10
+
+- [Container Runtime Security：seccomp、AppArmor 与 gVisor 生产级实践](./2026-06-10-container-runtime-security-seccomp-apparmor-gvisor.md) - 深入理解容器运行时安全三大核心机制，掌握系统调用过滤、强制访问控制与沙箱运行时配置，涵盖 Docker/Kubernetes 完整集成方案、seccomp 白名单生成、AppArmor 策略编写、gVisor 沙箱部署，含特权容器逃逸防护、系统调用兼容性、性能优化等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-06-09
 
 - [LLM Function Calling：生产环境的工具集成模式](./2026-06-09-llm-function-calling-production-patterns.md) - 深入解析 Function Calling 核心机制与 Schema 设计原则，掌握 OpenAI/Anthropic/Google 多平台协议差异，涵盖并行调用优化、循环调用陷阱、敏感操作保护等 5 大常见坑排查指南，提供 Python 完整实现示例与生产级部署 Checklist

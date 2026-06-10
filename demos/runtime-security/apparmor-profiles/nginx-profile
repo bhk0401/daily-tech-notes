@@ -1,0 +1,55 @@
+# AppArmor profile for Nginx container
+# Usage: sudo apparmor_parser -r /etc/apparmor.d/docker-nginx
+
+#include <tunables/global>
+
+profile docker-nginx flags=(attach_disconnected,mediate_deleted) {
+  # Include basic abstractions
+  include <abstractions/base>
+  include <abstractions/nameservice>
+  include <abstractions/tls>
+  
+  # Allow nginx binary
+  /usr/sbin/nginx ix,
+  /usr/bin/nginx ix,
+  
+  # Configuration files (read-only)
+  /etc/nginx/** r,
+  
+  # Log files (read-write)
+  /var/log/nginx/** rw,
+  owner /var/cache/nginx/** rw,
+  
+  # Temporary files
+  owner /tmp/** rw,
+  owner /var/tmp/** rw,
+  
+  # Network access
+  network inet tcp,
+  network inet udp,
+  network inet raw,
+  
+  # Allow binding to standard ports
+  capability net_bind_service,
+  
+  # Deny dangerous operations
+  deny /etc/shadow r,
+  deny /etc/passwd w,
+  deny /etc/group w,
+  deny /proc/kcore r,
+  deny /proc/kmsg r,
+  deny /sys/firmware/** r,
+  
+  # Deny dangerous capabilities
+  deny capability sys_admin,
+  deny capability sys_ptrace,
+  deny capability sys_module,
+  deny capability sys_rawio,
+  
+  # Deny mounting
+  deny mount,
+  deny umount,
+  
+  # Deny ptrace
+  deny ptrace,
+}

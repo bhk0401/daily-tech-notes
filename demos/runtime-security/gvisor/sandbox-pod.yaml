@@ -1,0 +1,72 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: sandboxed-untrusted-app
+  labels:
+    app: untrusted-workload
+    security-level: high
+spec:
+  runtimeClassName: gvisor
+  securityContext:
+    seccompProfile:
+      type: RuntimeDefault
+    runAsNonRoot: true
+    runAsUser: 1000
+    runAsGroup: 1000
+    fsGroup: 1000
+  containers:
+  - name: app
+    image: myapp:latest
+    securityContext:
+      allowPrivilegeEscalation: false
+      readOnlyRootFilesystem: true
+      capabilities:
+        drop:
+          - ALL
+    resources:
+      requests:
+        memory: "256Mi"
+        cpu: "250m"
+      limits:
+        memory: "512Mi"
+        cpu: "500m"
+    volumeMounts:
+    - name: tmp
+      mountPath: /tmp
+    - name: cache
+      mountPath: /var/cache
+  volumes:
+  - name: tmp
+    emptyDir:
+      medium: Memory
+  - name: cache
+    emptyDir: {}
+---
+# NetworkPolicy for additional isolation
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: sandbox-isolation
+spec:
+  podSelector:
+    matchLabels:
+      security-level: high
+  policyTypes:
+  - Ingress
+  - Egress
+  ingress:
+  - from:
+    - podSelector:
+        matchLabels:
+          role: gateway
+    ports:
+    - protocol: TCP
+      port: 8080
+  egress:
+  - to:
+    - podSelector:
+        matchLabels:
+          role: database
+    ports:
+    - protocol: TCP
+      port: 5432

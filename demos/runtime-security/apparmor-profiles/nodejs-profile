@@ -1,0 +1,55 @@
+# AppArmor profile for Node.js container
+# Usage: sudo apparmor_parser -r /etc/apparmor.d/docker-nodejs
+
+#include <tunables/global>
+
+profile docker-nodejs flags=(attach_disconnected,mediate_deleted) {
+  # Include basic abstractions
+  include <abstractions/base>
+  include <abstractions/nameservice>
+  include <abstractions/ssl_certs>
+  include <abstractions/bash>
+  
+  # Allow Node.js binary
+  /usr/local/bin/node ix,
+  /usr/bin/node ix,
+  /usr/local/bin/npm ix,
+  /usr/bin/npm ix,
+  
+  # Application code (adjust path as needed)
+  /app/** r,
+  /app/package.json r,
+  
+  # Node modules (read-only for production)
+  /app/node_modules/** r,
+  
+  # Temporary and cache directories
+  owner /tmp/** rw,
+  owner /var/tmp/** rw,
+  owner /root/.npm/** rw,
+  
+  # Log files
+  owner /var/log/app/** rw,
+  
+  # Network access
+  network inet tcp,
+  network inet udp,
+  
+  # Allow binding to ports > 1024
+  capability net_bind_service,
+  
+  # Deny dangerous operations
+  deny /etc/shadow r,
+  deny /etc/passwd w,
+  deny /proc/kcore r,
+  deny /sys/firmware/** r,
+  
+  # Deny dangerous capabilities
+  deny capability sys_admin,
+  deny capability sys_ptrace,
+  deny capability sys_module,
+  
+  # Deny mounting
+  deny mount,
+  deny umount,
+}

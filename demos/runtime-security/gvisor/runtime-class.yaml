@@ -1,0 +1,30 @@
+apiVersion: node.k8s.io/v1
+kind: RuntimeClass
+metadata:
+  name: gvisor
+  labels:
+    security.kubernetes.io/runtime: sandboxed
+handler: runsc
+overhead:
+  podFixed:
+    memory: "128Mi"
+    cpu: "250m"
+scheduling:
+  nodeSelector:
+    gvisor-enabled: "true"
+---
+apiVersion: node.k8s.io/v1
+kind: RuntimeClass
+metadata:
+  name: gvisor-debug
+  labels:
+    security.kubernetes.io/runtime: sandboxed-debug
+handler: runsc
+# Debug mode with strace
+overhead:
+  podFixed:
+    memory: "256Mi"
+    cpu: "500m"
+scheduling:
+  nodeSelector:
+    gvisor-enabled: "true"

@@ -1,0 +1,10 @@
+{
+  "defaultAction": "SCMP_ACT_LOG",
+  "architectures": ["SCMP_ARCH_X86_64"],
+  "syscalls": [
+    {
+      "names": ["ptrace", "mount", "reboot", "kexec_load"],
+      "action": "SCMP_ACT_ERRNO"
+    }
+  ]
+}
