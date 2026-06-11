@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-11
+
+- [结构化日志与日志管理平台：ELK vs Loki 生产级实践](./2026-06-11-structured-logging-elk-loki-production.md) - 深入结构化日志核心原则，对比 ELK Stack 与 Loki 架构差异，掌握 JSON 日志规范、高效查询语法、告警规则配置与成本控制策略，涵盖 Node.js/Python/Go 多语言实现、Promtail 采集配置、LogQL 查询实战、标签基数爆炸/内存溢出/日志重复等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-06-10
 
 - [Container Runtime Security：seccomp、AppArmor 与 gVisor 生产级实践](./2026-06-10-container-runtime-security-seccomp-apparmor-gvisor.md) - 深入理解容器运行时安全三大核心机制，掌握系统调用过滤、强制访问控制与沙箱运行时配置，涵盖 Docker/Kubernetes 完整集成方案、seccomp 白名单生成、AppArmor 策略编写、gVisor 沙箱部署，含特权容器逃逸防护、系统调用兼容性、性能优化等 5 大常见坑排查指南与生产级部署 Checklist
