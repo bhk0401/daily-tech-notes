@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-12
+
+- [WebAssembly System Interface (WASI)：容器化之外的沙箱标准化方案](./2026-06-12-wasi-sandbox-standardization.md) - 深入理解 WASI 核心架构与 Capability-Based Security 模型，掌握 Wasmtime/Wasmer 运行时使用，对比 WASI 与容器沙箱的本质区别，涵盖 Rust 编译 WASI 模块、Docker/Kubernetes 部署完整示例、WASI Preview 版本兼容性/文件权限/网络限制/内存 OOM/多线程缺失等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-06-11
 
 - [结构化日志与日志管理平台：ELK vs Loki 生产级实践](./2026-06-11-structured-logging-elk-loki-production.md) - 深入结构化日志核心原则，对比 ELK Stack 与 Loki 架构差异，掌握 JSON 日志规范、高效查询语法、告警规则配置与成本控制策略，涵盖 Node.js/Python/Go 多语言实现、Promtail 采集配置、LogQL 查询实战、标签基数爆炸/内存溢出/日志重复等 5 大常见坑排查指南与生产级部署 Checklist
