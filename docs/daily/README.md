@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-13
+
+- [AI Agent Orchestration：状态管理、记忆持久化与多智能体协作模式](./2026-06-13-ai-agent-orchestration-state-memory.md) - 深入解析生产级 AI Agent 系统核心架构挑战，掌握 Redis/MongoDB 记忆存储方案、Agent 状态机设计模式、基于消息队列的多 Agent 通信架构，涵盖状态竞态条件/记忆存储爆炸/消息循环/向量检索冷启动/分布式状态一致性等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-06-12
 
 - [WebAssembly System Interface (WASI)：容器化之外的沙箱标准化方案](./2026-06-12-wasi-sandbox-standardization.md) - 深入理解 WASI 核心架构与 Capability-Based Security 模型，掌握 Wasmtime/Wasmer 运行时使用，对比 WASI 与容器沙箱的本质区别，涵盖 Rust 编译 WASI 模块、Docker/Kubernetes 部署完整示例、WASI Preview 版本兼容性/文件权限/网络限制/内存 OOM/多线程缺失等 5 大常见坑排查指南与生产级部署 Checklist
