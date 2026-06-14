@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-14
+
+- [Prometheus + Grafana：云原生指标监控生产实践](./2026-06-14-prometheus-grafana-metrics-monitoring.md) - 深入理解 Prometheus 核心架构与 PromQL 查询语言，掌握生产级 Kubernetes 监控配置、核心告警规则设计、Grafana 仪表板管理，涵盖高基数标签爆炸/Counter 误用/告警风暴/抓取超时/存储 retention 等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-06-13
 
 - [AI Agent Orchestration：状态管理、记忆持久化与多智能体协作模式](./2026-06-13-ai-agent-orchestration-state-memory.md) - 深入解析生产级 AI Agent 系统核心架构挑战，掌握 Redis/MongoDB 记忆存储方案、Agent 状态机设计模式、基于消息队列的多 Agent 通信架构，涵盖状态竞态条件/记忆存储爆炸/消息循环/向量检索冷启动/分布式状态一致性等 5 大常见坑排查指南与生产级部署 Checklist
