@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-15
+
+- [分布式追踪实战：Trace 分析、故障定位与性能优化](./2026-06-15-distributed-tracing-debugging-patterns.md) - 深入解析分布式追踪核心数据结构与上下文传播机制，掌握 Jaeger/Tempo Trace 分析方法、慢请求根因定位技巧、错误传播路径追踪，涵盖 Trace 链路断裂/采样丢失关键请求/Span 爆炸/时钟不同步等 5 大常见坑排查指南，提供 Node.js + OpenTelemetry 完整埋点示例与生产级部署 Checklist
+
 ## 2026-06-14
 
 - [Prometheus + Grafana：云原生指标监控生产实践](./2026-06-14-prometheus-grafana-metrics-monitoring.md) - 深入理解 Prometheus 核心架构与 PromQL 查询语言，掌握生产级 Kubernetes 监控配置、核心告警规则设计、Grafana 仪表板管理，涵盖高基数标签爆炸/Counter 误用/告警风暴/抓取超时/存储 retention 等 5 大常见坑排查指南与生产级部署 Checklist
