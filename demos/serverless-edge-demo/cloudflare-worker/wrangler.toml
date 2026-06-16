@@ -1,0 +1,28 @@
+name = "serverless-edge-demo"
+main = "src/index.ts"
+compatibility_date = "2024-01-01"
+compatibility_flags = ["nodejs_compat"]
+
+# 开发环境配置
+[vars]
+DEBUG = "true"
+LOG_LEVEL = "debug"
+RATE_LIMIT_MAX = "100"
+
+# KV Namespace（用于限流计数）
+[[kv_namespaces]]
+binding = "KV_STORE"
+id = "your-kv-namespace-id"
+preview_id = "your-preview-kv-namespace-id"
+
+# 生产环境配置
+[env.production]
+vars = { DEBUG = "false", LOG_LEVEL = "error", RATE_LIMIT_MAX = "1000" }
+routes = [
+  { pattern = "api.yourdomain.com/*", zone_name = "yourdomain.com" }
+]
+
+# 开发服务器配置
+[dev]
+port = 8787
+local_protocol = "http"

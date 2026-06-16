@@ -1,0 +1,16 @@
+{
+  "name": "vercel-functions-demo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vercel dev",
+    "deploy": "vercel --prod",
+    "inspect": "vercel inspect"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "@vercel/node": "^3.0.0",
+    "typescript": "^5.3.3",
+    "vercel": "^32.6.0"
+  }
+}

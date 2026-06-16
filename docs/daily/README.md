@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-16
+
+- [Serverless Functions + Edge Computing：无服务器与边缘计算的部署实战](./2026-06-16-serverless-edge-functions-deployment.md) - 深入理解 Serverless Functions 与 Edge Computing 核心架构差异，掌握 Cloudflare Workers、Vercel Functions、AWS Lambda@Edge 三大平台部署实践，涵盖 V8 Isolates vs 容器执行模型对比、冷启动优化、边缘中间件实现、A/B 测试架构，提供完整 TypeScript 代码示例、多环境配置、限流/认证/CORS 中间件链，含 5 大常见坑（冷启动延迟/执行超时/环境变量/CORS/状态管理）排查指南与生产级部署 Checklist
+
 ## 2026-06-15
 
 - [分布式追踪实战：Trace 分析、故障定位与性能优化](./2026-06-15-distributed-tracing-debugging-patterns.md) - 深入解析分布式追踪核心数据结构与上下文传播机制，掌握 Jaeger/Tempo Trace 分析方法、慢请求根因定位技巧、错误传播路径追踪，涵盖 Trace 链路断裂/采样丢失关键请求/Span 爆炸/时钟不同步等 5 大常见坑排查指南，提供 Node.js + OpenTelemetry 完整埋点示例与生产级部署 Checklist
