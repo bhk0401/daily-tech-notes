@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-18
+
+- [Micro-frontends 实战：Module Federation 与集成模式](./2026-06-18-microfrontends-module-federation.md) - 深入理解 Module Federation 核心原理与 Host/Remote 架构，掌握 Webpack 5 微前端配置方法、共享依赖优化策略，涵盖 React 重复加载/样式污染/CORS 错误/版本冲突/状态同步等 5 大常见坑排查指南，提供完整 TypeScript 示例代码与生产级部署 Checklist
+
 ## 2026-06-17
 
 - [Kubernetes 批量处理：Job 与 CronJob 生产实践](./2026-06-17-kubernetes-batch-processing-job-cronjob.md) - 深入理解 Kubernetes Job/CronJob 核心概念与适用场景，掌握 completions/parallelism/backoffLimit 配置、并发策略控制、失败重试机制，涵盖批量数据处理/定时备份/报告生成完整示例，含 Pod Pending/无限重试/调度失败/数据竞争/日志丢失等 5 大常见坑排查指南与生产级部署 Checklist
