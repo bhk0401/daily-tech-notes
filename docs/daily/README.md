@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-19
+
+- [gRPC Error Handling & Retry：生产环境的错误码、重试机制与 Deadline 管理](./2026-06-19-grpc-error-handling-retry-deadline.md) - 深入解析 gRPC 16 种标准错误码语义与处理策略，掌握声明式重试配置、指数退避 + 抖动算法、Deadline 传播机制，涵盖非幂等重试陷阱/级联超时/重试风暴/连接池耗尽等 5 大常见坑排查指南，提供 Node.js 完整实现示例与生产级部署 Checklist
+
 ## 2026-06-18
 
 - [Micro-frontends 实战：Module Federation 与集成模式](./2026-06-18-microfrontends-module-federation.md) - 深入理解 Module Federation 核心原理与 Host/Remote 架构，掌握 Webpack 5 微前端配置方法、共享依赖优化策略，涵盖 React 重复加载/样式污染/CORS 错误/版本冲突/状态同步等 5 大常见坑排查指南，提供完整 TypeScript 示例代码与生产级部署 Checklist
