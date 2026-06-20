@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-20
+
+- [AI Streaming Responses：SSE/WebSocket 模式在 LLM 应用中的实战](./2026-06-20-ai-streaming-sse-websocket-patterns.md) - 深入解析 Server-Sent Events 与 WebSocket 在 AI 流式响应场景的技术选型，掌握 Next.js App Router SSE 实现、Express WebSocket 双向通信、Nginx 缓冲配置，涵盖连接中断恢复/认证传递/JSON 解析错误/代理缓冲等 5 大常见坑排查指南，提供 TypeScript 完整实现示例与生产级部署 Checklist
+
 ## 2026-06-19
 
 - [gRPC Error Handling & Retry：生产环境的错误码、重试机制与 Deadline 管理](./2026-06-19-grpc-error-handling-retry-deadline.md) - 深入解析 gRPC 16 种标准错误码语义与处理策略，掌握声明式重试配置、指数退避 + 抖动算法、Deadline 传播机制，涵盖非幂等重试陷阱/级联超时/重试风暴/连接池耗尽等 5 大常见坑排查指南，提供 Node.js 完整实现示例与生产级部署 Checklist
