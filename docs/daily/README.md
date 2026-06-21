@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-21
+
+- [Kubernetes Operators：CRD 与 Controller 开发实战](./2026-06-21-kubernetes-operators-crds-controllers.md) - 深入解析 Kubernetes Operator 核心架构与协调循环原理，掌握 Kubebuilder 快速搭建方法、CRD Schema 设计、Controller 幂等性实现，涵盖 Database Operator 完整示例（StatefulSet/Service/PVC/Backup CronJob 自动化），含无限重试/版本升级数据丢失/RBAC 权限不足/最终一致性等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-06-20
 
 - [AI Streaming Responses：SSE/WebSocket 模式在 LLM 应用中的实战](./2026-06-20-ai-streaming-sse-websocket-patterns.md) - 深入解析 Server-Sent Events 与 WebSocket 在 AI 流式响应场景的技术选型，掌握 Next.js App Router SSE 实现、Express WebSocket 双向通信、Nginx 缓冲配置，涵盖连接中断恢复/认证传递/JSON 解析错误/代理缓冲等 5 大常见坑排查指南，提供 TypeScript 完整实现示例与生产级部署 Checklist
