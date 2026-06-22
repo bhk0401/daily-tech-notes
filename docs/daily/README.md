@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-22
+
+- [Chaos Engineering：Kubernetes 生产环境的故障注入与韧性测试](./2026-06-22-chaos-engineering-kubernetes-production.md) - 深入理解混沌工程四大原则与爆炸半径控制，掌握 Chaos Mesh 核心 CRD（PodChaos/NetworkChaos/StressChaos/Workflow），涵盖 Pod Kill 自愈验证、网络延迟超时测试、CPU Stress 触发 HPA、复合故障工作流编排等 5 大实战示例，含 RBAC 权限不足/爆炸半径过大/稳态未恢复/Dashboard 失联/监控数据污染等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-06-21
 
 - [Kubernetes Operators：CRD 与 Controller 开发实战](./2026-06-21-kubernetes-operators-crds-controllers.md) - 深入解析 Kubernetes Operator 核心架构与协调循环原理，掌握 Kubebuilder 快速搭建方法、CRD Schema 设计、Controller 幂等性实现，涵盖 Database Operator 完整示例（StatefulSet/Service/PVC/Backup CronJob 自动化），含无限重试/版本升级数据丢失/RBAC 权限不足/最终一致性等 5 大常见坑排查指南与生产级部署 Checklist

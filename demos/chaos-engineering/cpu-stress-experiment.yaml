@@ -1,0 +1,20 @@
+# CPU Stress 实验：验证 HPA 自动扩缩容
+# 对 api-server Pod 注入 80% CPU 负载，触发自动扩容
+
+apiVersion: chaos-mesh.org/v1alpha1
+kind: StressChaos
+metadata:
+  name: cpu-stress-demo
+  namespace: demo-app
+spec:
+  mode: all
+  selector:
+    namespaces:
+      - demo-app
+    labelSelectors:
+      app: api-server
+  stressors:
+    cpu:
+      workers: 4
+      load: 80
+  duration: "5m"

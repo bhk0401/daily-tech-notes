@@ -1,0 +1,20 @@
+# Pod Kill 实验：验证 Kubernetes 自愈能力
+# 每 10 分钟随机杀死一个 api-server Pod，验证服务是否持续可用
+
+apiVersion: chaos-mesh.org/v1alpha1
+kind: PodChaos
+metadata:
+  name: pod-kill-demo
+  namespace: demo-app
+spec:
+  action: pod-kill
+  mode: one
+  selector:
+    namespaces:
+      - demo-app
+    labelSelectors:
+      app: api-server
+  gracePeriod: 0
+  duration: "5m"
+  scheduler:
+    cron: "@every 10m"

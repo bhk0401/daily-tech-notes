@@ -1,0 +1,21 @@
+# 网络延迟实验：验证服务超时配置
+# 对所有 api-server Pod 注入 200ms ± 50ms 的网络延迟
+
+apiVersion: chaos-mesh.org/v1alpha1
+kind: NetworkChaos
+metadata:
+  name: network-delay-demo
+  namespace: demo-app
+spec:
+  action: delay
+  mode: all
+  selector:
+    namespaces:
+      - demo-app
+    labelSelectors:
+      app: api-server
+  delay:
+    latency: "200ms"
+    jitter: "50ms"
+  direction: both
+  duration: "3m"

@@ -1,0 +1,65 @@
+# 混沌工作流：数据库故障 + 网络分区复合场景
+# 模拟真实生产环境中的级联故障
+
+apiVersion: chaos-mesh.org/v1alpha1
+kind: Workflow
+metadata:
+  name: database-failure-workflow
+  namespace: demo-app
+spec:
+  entry: entry
+  templates:
+    - name: entry
+      steps:
+        - - name: delay-1
+            template: wait-1
+        - - name: network-partition
+            template: network-partition
+        - - name: delay-2
+            template: wait-2
+        - - name: pod-kill-db
+            template: pod-kill-db
+        - - name: delay-3
+            template: wait-3
+
+    - name: wait-1
+      template: true
+      delays:
+        - duration: "1m"
+
+    - name: network-partition
+      template: true
+      chaos:
+        network-chaos:
+          name: db-network-partition
+          spec:
+            action: partition
+            selector:
+              labelSelectors:
+                app: database
+            externalTargets:
+              - 10.0.0.0/8
+            duration: "2m"
+
+    - name: wait-2
+      template: true
+      delays:
+        - duration: "30s"
+
+    - name: pod-kill-db
+      template: true
+      chaos:
+        pod-chaos:
+          name: db-pod-kill
+          spec:
+            action: pod-kill
+            mode: one
+            selector:
+              labelSelectors:
+                app: database
+            duration: "1m"
+
+    - name: wait-3
+      template: true
+      delays:
+        - duration: "2m"
