@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-23
+
+- [Kubernetes Storage：PV/PVC/StorageClass 生产实践](./2026-06-23-kubernetes-storage-pv-pvc-storageclass.md) - 深入理解 Kubernetes 持久化存储三层抽象（PV/PVC/StorageClass）的工作原理与绑定机制，掌握 NFS/Local Path/云厂商存储（AWS EBS）配置方法，涵盖动态供应、访问模式（RWO/RWX/ROX）、回收策略、volumeBindingMode 核心概念，提供 StatefulSet MySQL 部署、多 Pod 共享存储完整示例，含 PVC Pending/挂载超时/数据竞争/StorageClass 删除/扩容失败等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-06-22
 
 - [Chaos Engineering：Kubernetes 生产环境的故障注入与韧性测试](./2026-06-22-chaos-engineering-kubernetes-production.md) - 深入理解混沌工程四大原则与爆炸半径控制，掌握 Chaos Mesh 核心 CRD（PodChaos/NetworkChaos/StressChaos/Workflow），涵盖 Pod Kill 自愈验证、网络延迟超时测试、CPU Stress 触发 HPA、复合故障工作流编排等 5 大实战示例，含 RBAC 权限不足/爆炸半径过大/稳态未恢复/Dashboard 失联/监控数据污染等 5 大常见坑排查指南与生产级部署 Checklist
