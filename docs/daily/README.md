@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-24
+
+- [Kubernetes Network Policies：零信任微隔离生产实践](./2026-06-24-kubernetes-network-policies-zero-trust.md) - 深入理解 Kubernetes NetworkPolicy 工作原理与零信任网络架构设计，掌握默认拒绝策略、三层架构隔离、多租户命名空间隔离、L7 应用层策略（Cilium）等实战模式，涵盖 DNS 流量遗漏/选择器组合逻辑混淆/策略优先级误解/CNI 插件兼容性/外部依赖阻断等 5 大常见坑排查指南，提供完整 YAML 示例与生产级部署 Checklist
+
 ## 2026-06-23
 
 - [Kubernetes Storage：PV/PVC/StorageClass 生产实践](./2026-06-23-kubernetes-storage-pv-pvc-storageclass.md) - 深入理解 Kubernetes 持久化存储三层抽象（PV/PVC/StorageClass）的工作原理与绑定机制，掌握 NFS/Local Path/云厂商存储（AWS EBS）配置方法，涵盖动态供应、访问模式（RWO/RWX/ROX）、回收策略、volumeBindingMode 核心概念，提供 StatefulSet MySQL 部署、多 Pod 共享存储完整示例，含 PVC Pending/挂载超时/数据竞争/StorageClass 删除/扩容失败等 5 大常见坑排查指南与生产级部署 Checklist

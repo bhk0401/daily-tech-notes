@@ -1,0 +1,36 @@
+# 默认拒绝所有流量 - 零信任基线
+# 应用此策略后，命名空间内所有 Pod 的入站和出站流量将被阻断
+# 必须配合具体的允许策略使用
+
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: default-deny-all
+  namespace: ecommerce
+spec:
+  podSelector: {}
+  policyTypes:
+    - Ingress
+    - Egress
+---
+# 仅允许 DNS 流量出站（必要！否则 Pod 无法解析域名）
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: allow-dns-egress
+  namespace: ecommerce
+spec:
+  podSelector: {}
+  policyTypes:
+    - Egress
+  egress:
+    - to:
+        - namespaceSelector: {}
+          podSelector:
+            matchLabels:
+              k8s-app: kube-dns
+      ports:
+        - protocol: UDP
+          port: 53
+        - protocol: TCP
+          port: 53

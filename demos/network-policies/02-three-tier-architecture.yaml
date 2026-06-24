@@ -1,0 +1,131 @@
+# 三层架构网络策略完整示例
+# Frontend -> API Gateway -> Backend -> Database
+
+# 1. Frontend 策略
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: frontend-policy
+  namespace: ecommerce
+spec:
+  podSelector:
+    matchLabels:
+      tier: frontend
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    # 允许来自 Ingress Controller 的流量
+    - from:
+        - namespaceSelector:
+            matchLabels:
+              name: ingress-nginx
+      ports:
+        - protocol: TCP
+          port: 3000
+  egress:
+    # 允许访问 API Gateway
+    - to:
+        - podSelector:
+            matchLabels:
+              tier: api-gateway
+      ports:
+        - protocol: TCP
+          port: 8080
+---
+# 2. API Gateway 策略
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: api-gateway-policy
+  namespace: ecommerce
+spec:
+  podSelector:
+    matchLabels:
+      tier: api-gateway
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    # 允许来自 Frontend 的流量
+    - from:
+        - podSelector:
+            matchLabels:
+              tier: frontend
+      ports:
+        - protocol: TCP
+          port: 8080
+  egress:
+    # 允许访问 Backend Service
+    - to:
+        - podSelector:
+            matchLabels:
+              tier: backend
+      ports:
+        - protocol: TCP
+          port: 3000
+    # 允许访问外部 API（HTTPS）
+    - to:
+        - ipBlock:
+            cidr: 0.0.0.0/0
+            except:
+              - 10.0.0.0/8
+              - 172.16.0.0/12
+              - 192.168.0.0/16
+      ports:
+        - protocol: TCP
+          port: 443
+---
+# 3. Backend Service 策略
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: backend-policy
+  namespace: ecommerce
+spec:
+  podSelector:
+    matchLabels:
+      tier: backend
+  policyTypes:
+    - Ingress
+    - Egress
+  ingress:
+    # 允许来自 API Gateway 的流量
+    - from:
+        - podSelector:
+            matchLabels:
+              tier: api-gateway
+      ports:
+        - protocol: TCP
+          port: 3000
+  egress:
+    # 允许访问 Database
+    - to:
+        - podSelector:
+            matchLabels:
+              tier: database
+      ports:
+        - protocol: TCP
+          port: 5432
+---
+# 4. Database 策略（最严格）
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  name: database-policy
+  namespace: ecommerce
+spec:
+  podSelector:
+    matchLabels:
+      tier: database
+  policyTypes:
+    - Ingress
+  ingress:
+    # 仅允许来自 Backend 的流量
+    - from:
+        - podSelector:
+            matchLabels:
+              tier: backend
+      ports:
+        - protocol: TCP
+          port: 5432
