@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-25
+
+- [API Versioning Strategies：生产环境的版本管理实战](./2026-06-25-api-versioning-strategies-production.md) - 深入对比 URL Path/Header/Content Negotiation 三种 API 版本化方案，掌握破坏性变更识别、版本生命周期管理（发布/维护/弃用/下线）、Node.js + Express 多版本路由实现，涵盖版本路由冲突/共享状态污染/文档不同步/缓存未隔离/监控未区分等 5 大常见坑排查指南，提供完整 TypeScript 实现示例、迁移适配器模式与生产级部署 Checklist
+
 ## 2026-06-24
 
 - [Kubernetes Network Policies：零信任微隔离生产实践](./2026-06-24-kubernetes-network-policies-zero-trust.md) - 深入理解 Kubernetes NetworkPolicy 工作原理与零信任网络架构设计，掌握默认拒绝策略、三层架构隔离、多租户命名空间隔离、L7 应用层策略（Cilium）等实战模式，涵盖 DNS 流量遗漏/选择器组合逻辑混淆/策略优先级误解/CNI 插件兼容性/外部依赖阻断等 5 大常见坑排查指南，提供完整 YAML 示例与生产级部署 Checklist
