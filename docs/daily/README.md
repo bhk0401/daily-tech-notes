@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-26
+
+- [Frontend Build Optimization：打包、Tree Shaking 与代码分割生产实践](./2026-06-26-frontend-build-optimization-bundling-tree-shaking.md) - 深入解析 Webpack/Vite 构建优化核心机制，掌握 Tree Shaking 静态分析原理、路由级/组件级/库级代码分割策略与 Bundle 分析技巧，涵盖 lodash-es 具名导入、manualChunks 手动分割、terser 压缩配置等实战模式，含 Tree Shaking 未生效/动态 require 全量打包/重复依赖膨胀/过度分割请求瀑布/Sourcemap 泄露等 5 大常见坑排查指南，提供完整 Vite + React 配置示例与生产级部署 Checklist
+
 ## 2026-06-25
 
 - [API Versioning Strategies：生产环境的版本管理实战](./2026-06-25-api-versioning-strategies-production.md) - 深入对比 URL Path/Header/Content Negotiation 三种 API 版本化方案，掌握破坏性变更识别、版本生命周期管理（发布/维护/弃用/下线）、Node.js + Express 多版本路由实现，涵盖版本路由冲突/共享状态污染/文档不同步/缓存未隔离/监控未区分等 5 大常见坑排查指南，提供完整 TypeScript 实现示例、迁移适配器模式与生产级部署 Checklist
