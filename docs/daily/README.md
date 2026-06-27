@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-27
+
+- [Container Image Signing & Supplychain Security：Sigstore/Cosign 生产级实践](./2026-06-27-container-image-signing-sigstore-cosign.md) - 深入理解 Sigstore 项目核心架构（Cosign/Rekor/Fulcio），掌握密钥对签名、密钥less OIDC 签名、KMS 托管签名三种模式，涵盖 GitHub Actions 集成、Kubernetes Policy Controller 自动验证、透明度日志审计等实战场景，含 signature unknown/OIDC 超时/Policy Controller 不生效/Rekor 查询失败/CI 权限不足等 5 大常见坑排查指南，提供完整 Cosign 命令示例与生产级部署 Checklist
+
 ## 2026-06-26
 
 - [Frontend Build Optimization：打包、Tree Shaking 与代码分割生产实践](./2026-06-26-frontend-build-optimization-bundling-tree-shaking.md) - 深入解析 Webpack/Vite 构建优化核心机制，掌握 Tree Shaking 静态分析原理、路由级/组件级/库级代码分割策略与 Bundle 分析技巧，涵盖 lodash-es 具名导入、manualChunks 手动分割、terser 压缩配置等实战模式，含 Tree Shaking 未生效/动态 require 全量打包/重复依赖膨胀/过度分割请求瀑布/Sourcemap 泄露等 5 大常见坑排查指南，提供完整 Vite + React 配置示例与生产级部署 Checklist
