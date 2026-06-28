@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-28
+
+- [Event-Driven Architecture：事件溯源、CQRS 与事件风暴生产实践](./2026-06-28-event-driven-architecture-event-sourcing-cqrs.md) - 深入解析事件驱动架构三大核心模式：事件溯源（Event Sourcing）将状态变更持久化为不可变事件流、CQRS 实现读写职责分离独立优化、事件风暴（Event Storming）协作建模发现领域边界，涵盖电商订单系统完整 TypeScript 实现（事件定义/事件存储/聚合根/投影器）、PostgreSQL/EventStoreDB/Kafka/MongoDB/Redis Streams 五类事件存储选型对比，含事件版本演进/投影一致性/重复消费/聚合加载性能等 4 大常见坑排查指南，提供乐观并发控制/幂等处理器/快照优化完整代码示例与生产级部署 Checklist
+
 ## 2026-06-27
 
 - [Container Image Signing & Supplychain Security：Sigstore/Cosign 生产级实践](./2026-06-27-container-image-signing-sigstore-cosign.md) - 深入理解 Sigstore 项目核心架构（Cosign/Rekor/Fulcio），掌握密钥对签名、密钥less OIDC 签名、KMS 托管签名三种模式，涵盖 GitHub Actions 集成、Kubernetes Policy Controller 自动验证、透明度日志审计等实战场景，含 signature unknown/OIDC 超时/Policy Controller 不生效/Rekor 查询失败/CI 权限不足等 5 大常见坑排查指南，提供完整 Cosign 命令示例与生产级部署 Checklist
