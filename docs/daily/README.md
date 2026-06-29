@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-06-29
+
+- [Service Mesh mTLS：零信任通信与证书管理生产实践](./2026-06-29-service-mesh-mtls-zero-trust.md) - 深入解析 Service Mesh mTLS 核心架构与零信任通信原理，掌握 Istio/Linkerd 双向 TLS 配置方法、证书生命周期管理（签发/存储/轮换/撤销）、PeerAuthentication/DestinationRule 策略配置，涵盖 api-gateway + user-service 完整示例、证书验证脚本、外部服务 TLS originate 配置，含握手失败/证书过期/迁移中断/性能开销/外部访问等 5 大常见坑排查指南，提供 demos/mtls-demo 可运行项目与生产级部署 Checklist
+
 ## 2026-06-28
 
 - [Event-Driven Architecture：事件溯源、CQRS 与事件风暴生产实践](./2026-06-28-event-driven-architecture-event-sourcing-cqrs.md) - 深入解析事件驱动架构三大核心模式：事件溯源（Event Sourcing）将状态变更持久化为不可变事件流、CQRS 实现读写职责分离独立优化、事件风暴（Event Storming）协作建模发现领域边界，涵盖电商订单系统完整 TypeScript 实现（事件定义/事件存储/聚合根/投影器）、PostgreSQL/EventStoreDB/Kafka/MongoDB/Redis Streams 五类事件存储选型对比，含事件版本演进/投影一致性/重复消费/聚合加载性能等 4 大常见坑排查指南，提供乐观并发控制/幂等处理器/快照优化完整代码示例与生产级部署 Checklist
