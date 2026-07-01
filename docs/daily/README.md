@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-01
+
+- [HTTP/3 与 QUIC 协议：生产环境的性能优化实践](./2026-07-01-http3-quic-performance-optimization.md) - 深入解析 HTTP/3 基于 QUIC 协议的核心架构与性能优势，掌握 0-RTT 握手、连接迁移、流复用消除队头阻塞等关键特性，涵盖 Nginx HTTP/3 配置、Node.js 原生实现、弱网性能对比测试，含防火墙 UDP 阻断/CDN 兼容性/0-RTT 重放攻击/客户端适配/QUIC 连接重置/证书配置等 6 大常见坑排查指南，提供完整 Docker 示例与生产级部署 Checklist
+
 ## 2026-06-30
 
 - [多区域数据库复制与冲突解决策略：构建全球分布式数据系统](./2026-06-30-multi-region-database-replication-conflict-resolution.md) - 深入解析多区域数据库复制核心模式（同步/异步/半同步）与 CAP 定理实践，掌握 LWW/向量时钟/CRDT/操作转换/自定义合并五大冲突解决策略，涵盖 PostgreSQL 逻辑复制多主部署完整示例（发布/订阅/冲突检测触发器）、CRDT PNCounter 分布式限流器实现、AWS Aurora Global Database 托管方案，含复制延迟/LWW 数据丢失/循环复制/全局 ID 冲突/跨区事务等 5 大常见坑排查指南，提供 Node.js 冲突解决代码/Snowflake ID 生成器/监控 SQL 完整示例与生产级部署 Checklist
