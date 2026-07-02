@@ -1,0 +1,84 @@
+# Prometheus 资源监控告警规则
+# 需要安装 Prometheus Operator 或类似监控栈
+
+apiVersion: monitoring.coreos.com/v1
+kind: PrometheusRule
+metadata:
+  name: k8s-resource-alerts
+  namespace: monitoring
+  labels:
+    prometheus: main
+    role: alert-rules
+spec:
+  groups:
+  - name: k8s.resources
+    interval: 30s
+    rules:
+    # CPU Throttling 告警 - 节流比例超过 20%
+    - alert: PodCpuThrottling
+      expr: |
+        sum by (pod, namespace) (
+          rate(container_cpu_cfs_throttled_seconds_total[5m])
+        ) 
+        / 
+        sum by (pod, namespace) (
+          rate(container_cpu_cfs_periods_total[5m])
+        ) > 0.2
+      for: 10m
+      labels:
+        severity: warning
+      annotations:
+        summary: "Pod {{ $labels.pod }} 遭受 CPU 节流"
+        description: "节流比例 {{ $value | humanizePercentage }}，应用响应可能变慢"
+        runbook_url: "https://github.com/bhk0401/daily-tech-notes/blob/main/docs/daily/2026-07-02-kubernetes-resource-management-requests-limits-qos.md"
+    
+    # 内存使用接近 Limit - 超过 90%
+    - alert: PodMemoryNearLimit
+      expr: |
+        sum by (pod, namespace) (
+          container_memory_usage_bytes
+        ) 
+        / 
+        sum by (pod, namespace) (
+          container_spec_memory_limit_bytes
+        ) > 0.9
+      for: 5m
+      labels:
+        severity: warning
+      annotations:
+        summary: "Pod {{ $labels.pod }} 内存使用接近 Limit"
+        description: "当前使用 {{ $value | humanizePercentage }}，可能触发 OOMKilled"
+        runbook_url: "https://github.com/bhk0401/daily-tech-notes/blob/main/docs/daily/2026-07-02-kubernetes-resource-management-requests-limits-qos.md"
+    
+    # OOMKilled 告警
+    - alert: PodOomKilled
+      expr: |
+        increase(container_killed_reason{reason="OOMKilled"}[1h]) > 0
+      labels:
+        severity: critical
+      annotations:
+        summary: "Pod {{ $labels.pod }} 被 OOMKilled"
+        description: "1 小时内发生 {{ $value }} 次 OOM 杀死"
+        runbook_url: "https://github.com/bhk0401/daily-tech-notes/blob/main/docs/daily/2026-07-02-kubernetes-resource-management-requests-limits-qos.md"
+    
+    # Pod Pending 超过 5 分钟
+    - alert: PodPendingTooLong
+      expr: |
+        kube_pod_status_phase{phase="Pending"} > 0
+      for: 5m
+      labels:
+        severity: warning
+      annotations:
+        summary: "Pod {{ $labels.pod }} Pending 超过 5 分钟"
+        description: "可能资源不足或调度失败"
+    
+    # 节点内存压力
+    - alert: NodeMemoryPressure
+      expr: |
+        kube_node_status_condition{condition="MemoryPressure",status="true"} > 0
+      for: 5m
+      labels:
+        severity: critical
+      annotations:
+        summary: "节点 {{ $labels.node }} 内存压力"
+        description: "节点可能开始驱逐 Pod"

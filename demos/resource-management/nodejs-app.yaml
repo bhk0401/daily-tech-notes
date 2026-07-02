@@ -1,0 +1,88 @@
+# Node.js 应用资源配置示例
+# 展示如何根据监控数据优化资源配置
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-api
+  labels:
+    app: node-api
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: node-api
+  template:
+    metadata:
+      labels:
+        app: node-api
+    spec:
+      containers:
+      - name: api
+        image: node:18-alpine
+        ports:
+        - containerPort: 3000
+        command: ["node", "-e", "require('http').createServer((req,res)=>{res.end('OK')}).listen(3000)"]
+        resources:
+          # 基于监控数据的配置建议：
+          # - 平均 CPU 使用：320m
+          # - P99 CPU 峰值：450m
+          # - 平均内存使用：384Mi
+          # - P99 内存峰值：480Mi
+          requests:
+            cpu: "500m"      # 略高于平均值，保证调度
+            memory: "512Mi"  # 略高于平均值
+          limits:
+            cpu: "800m"      # 略高于 P99 峰值
+            memory: "650Mi"  # 480Mi × 1.3 ≈ 624Mi，向上取整
+        # Node.js 特定优化：限制 heap 大小为 limit 的 70%
+        # 防止 native memory 导致 OOMKilled
+        env:
+        - name: NODE_OPTIONS
+          value: "--max-old-space-size=450"  # 650Mi × 0.7 ≈ 455Mi
+        livenessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 10
+          periodSeconds: 10
+        readinessProbe:
+          httpGet:
+            path: /
+            port: 3000
+          initialDelaySeconds: 5
+          periodSeconds: 5
+
+---
+# Service 配置
+apiVersion: v1
+kind: Service
+metadata:
+  name: node-api
+  labels:
+    app: node-api
+spec:
+  ports:
+  - port: 80
+    targetPort: 3000
+  selector:
+    app: node-api
+
+---
+# 监控配置验证命令：
+# 
+# 1. 查看 Pod 的 QoS Class
+# kubectl get pods -l app=node-api -o jsonpath='{.items[*].status.qosClass}'
+# 期望输出：Burstable
+#
+# 2. 查看实时资源使用
+# kubectl top pods -l app=node-api
+#
+# 3. 查看 CPU 节流情况
+# kubectl exec -it <pod-name> -- cat /sys/fs/cgroup/cpu/cpu.stat
+#
+# 4. 查看内存使用详情
+# kubectl exec -it <pod-name> -- cat /sys/fs/cgroup/memory/memory.usage_in_bytes
+#
+# 5. 查看 OOM 事件
+# kubectl get events --field-selector reason=OOMKilled -o wide

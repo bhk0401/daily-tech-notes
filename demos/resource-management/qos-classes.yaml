@@ -1,0 +1,61 @@
+# Kubernetes QoS Classes 示例
+# 演示三大 QoS Class 的配置方式
+
+---
+# 1. Guaranteed QoS - 核心数据库（最后被驱逐）
+# 条件：requests = limits（CPU 和内存都相等）
+apiVersion: v1
+kind: Pod
+metadata:
+  name: postgres-guaranteed
+  labels:
+    qos-class: guaranteed
+spec:
+  containers:
+  - name: postgres
+    image: postgres:15
+    resources:
+      requests:
+        cpu: "1000m"
+        memory: "2Gi"
+      limits:
+        cpu: "1000m"    # = requests
+        memory: "2Gi"   # = requests
+    env:
+    - name: POSTGRES_PASSWORD
+      value: "demo123"
+---
+# 2. Burstable QoS - Web 应用（允许突发）
+# 条件：requests < limits（至少一个资源）
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-burstable
+  labels:
+    qos-class: burstable
+spec:
+  containers:
+  - name: nginx
+    image: nginx:1.25
+    resources:
+      requests:
+        cpu: "250m"
+        memory: "512Mi"
+      limits:
+        cpu: "1000m"   # 4 倍突发空间
+        memory: "1Gi"  # 2 倍突发空间
+---
+# 3. BestEffort QoS - 批处理任务（最先被驱逐）
+# 条件：未设置任何 requests/limits
+apiVersion: v1
+kind: Pod
+metadata:
+  name: batch-besteffort
+  labels:
+    qos-class: besteffort
+spec:
+  containers:
+  - name: worker
+    image: busybox:1.36
+    command: ["sh", "-c", "while true; do echo 'Processing...'; sleep 10; done"]
+    # 不设置 resources = BestEffort

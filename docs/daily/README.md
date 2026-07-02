@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-02
+
+- [Kubernetes Resource Management：Requests、Limits 与 QoS Classes 生产实践](./2026-07-02-kubernetes-resource-management-requests-limits-qos.md) - 深入理解 Kubernetes 资源模型核心机制，掌握 Requests/Limits 配置策略与 QoS Class 对 Pod 调度和驱逐的影响，涵盖 CPU/内存资源管理、OOMKilled 排查、节点资源超卖控制，提供三大 QoS Class 配置模板、Node.js 应用资源配置实践、LimitRange/ResourceQuota 命名空间治理、Prometheus 监控告警规则，含 OOMKilled 误判/CPU Throttling/Pod Pending/Guaranteed 驱逐/资源超卖等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-07-01
 
 - [HTTP/3 与 QUIC 协议：生产环境的性能优化实践](./2026-07-01-http3-quic-performance-optimization.md) - 深入解析 HTTP/3 基于 QUIC 协议的核心架构与性能优势，掌握 0-RTT 握手、连接迁移、流复用消除队头阻塞等关键特性，涵盖 Nginx HTTP/3 配置、Node.js 原生实现、弱网性能对比测试，含防火墙 UDP 阻断/CDN 兼容性/0-RTT 重放攻击/客户端适配/QUIC 连接重置/证书配置等 6 大常见坑排查指南，提供完整 Docker 示例与生产级部署 Checklist
