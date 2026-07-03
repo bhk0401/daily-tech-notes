@@ -1,0 +1,12 @@
+# Demo 1: Create namespace with baseline Pod Security level
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: baseline-test
+  labels:
+    pod-security.kubernetes.io/enforce: baseline
+    pod-security.kubernetes.io/enforce-version: latest
+    pod-security.kubernetes.io/audit: baseline
+    pod-security.kubernetes.io/audit-version: latest
+    pod-security.kubernetes.io/warn: baseline
+    pod-security.kubernetes.io/warn-version: latest

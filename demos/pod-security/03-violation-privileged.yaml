@@ -1,0 +1,14 @@
+# Demo 3: Violation example - privileged container (blocked by baseline)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: privileged-pod
+  namespace: baseline-test
+spec:
+  containers:
+  - name: test
+    image: nginx:alpine
+    securityContext:
+      privileged: true
+# Expected: admission webhook "pod-security.kubernetes.io" denied the request:
+# would violate PodSecurity "baseline:latest": privileged

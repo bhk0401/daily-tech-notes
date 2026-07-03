@@ -1,0 +1,13 @@
+# Demo 4: Violation example - root user (blocked by restricted)
+apiVersion: v1
+kind: Pod
+metadata:
+  name: root-pod
+  namespace: restricted-test
+spec:
+  containers:
+  - name: test
+    image: nginx:alpine
+    # Missing: runAsNonRoot: true
+# Expected: admission webhook "pod-security.kubernetes.io" denied the request:
+# would violate PodSecurity "restricted:latest": runAsNonRoot

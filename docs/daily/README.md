@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-03
+
+- [Kubernetes Pod Security Standards & Admission Controllers：生产环境安全基线](./2026-07-03-kubernetes-pod-security-standards-admission.md) - 深入理解 Pod Security Standards 三大安全级别（Privileged/Baseline/Restricted）与 Pod Security Admission 工作机制，掌握命名空间级 PSA 配置方法、渐进式迁移策略、系统命名空间豁免配置，涵盖特权容器拦截/非 root 运行/只读文件系统/capabilities 限制/seccomp 配置等核心约束，提供 baseline/restricted 命名空间配置、违规 Pod 示例、合规 Pod 完整模板、demos/pod-security 可运行示例，含系统命名空间误伤/Init Container 被忽略/Helm Chart 不兼容/审计日志找不到/OPA 冲突等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-07-02
 
 - [Kubernetes Resource Management：Requests、Limits 与 QoS Classes 生产实践](./2026-07-02-kubernetes-resource-management-requests-limits-qos.md) - 深入理解 Kubernetes 资源模型核心机制，掌握 Requests/Limits 配置策略与 QoS Class 对 Pod 调度和驱逐的影响，涵盖 CPU/内存资源管理、OOMKilled 排查、节点资源超卖控制，提供三大 QoS Class 配置模板、Node.js 应用资源配置实践、LimitRange/ResourceQuota 命名空间治理、Prometheus 监控告警规则，含 OOMKilled 误判/CPU Throttling/Pod Pending/Guaranteed 驱逐/资源超卖等 5 大常见坑排查指南与生产级部署 Checklist
