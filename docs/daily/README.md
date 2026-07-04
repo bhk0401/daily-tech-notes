@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-04
+
+- [TypeScript 高级类型编程：条件类型、映射类型与模板字面量类型实战](./2026-07-04-typescript-advanced-types-practical-guide.md) - 深入掌握 TypeScript 类型系统三大核心高级特性，涵盖条件类型（Conditional Types）与 infer 推断、映射类型（Mapped Types）属性变换、模板字面量类型（Template Literal Types）字符串操作，提供 DeepPartial 深度可选类型、API 响应提取器、类型安全状态机、自动派生 Hook 类型等 5 大实战示例，含分布式条件类型陷阱/infer 位置限制/as 子句可选性/模板类型性能/递归深度限制/联合类型交互等 6 大常见坑排查指南与类型编程 Checklist
+
 ## 2026-07-03
 
 - [Kubernetes Pod Security Standards & Admission Controllers：生产环境安全基线](./2026-07-03-kubernetes-pod-security-standards-admission.md) - 深入理解 Pod Security Standards 三大安全级别（Privileged/Baseline/Restricted）与 Pod Security Admission 工作机制，掌握命名空间级 PSA 配置方法、渐进式迁移策略、系统命名空间豁免配置，涵盖特权容器拦截/非 root 运行/只读文件系统/capabilities 限制/seccomp 配置等核心约束，提供 baseline/restricted 命名空间配置、违规 Pod 示例、合规 Pod 完整模板、demos/pod-security 可运行示例，含系统命名空间误伤/Init Container 被忽略/Helm Chart 不兼容/审计日志找不到/OPA 冲突等 5 大常见坑排查指南与生产级部署 Checklist
