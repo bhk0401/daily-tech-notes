@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-05
+
+- [AI Model Quantization for Edge Deployment：INT8/FP16 量化生产实践](./2026-07-05-ai-model-quantization-edge-deployment.md) - 深入解析 LLM 边缘部署核心量化技术，掌握 PTQ/QAT 原理、llama.cpp GGUF 量化、ONNX Runtime INT8 校准、TensorRT 部署优化，涵盖 Llama-3-8B Q4_K_M 量化实战、Jetson Nano 边缘部署完整示例，含精度下降/校准失败/GGUF 加载错误/边缘 OOM/推理不一致等 5 大常见坑排查指南，提供 demos/edge-quantization 可运行项目与生产级部署 Checklist
+
 ## 2026-07-04
 
 - [TypeScript 高级类型编程：条件类型、映射类型与模板字面量类型实战](./2026-07-04-typescript-advanced-types-practical-guide.md) - 深入掌握 TypeScript 类型系统三大核心高级特性，涵盖条件类型（Conditional Types）与 infer 推断、映射类型（Mapped Types）属性变换、模板字面量类型（Template Literal Types）字符串操作，提供 DeepPartial 深度可选类型、API 响应提取器、类型安全状态机、自动派生 Hook 类型等 5 大实战示例，含分布式条件类型陷阱/infer 位置限制/as 子句可选性/模板类型性能/递归深度限制/联合类型交互等 6 大常见坑排查指南与类型编程 Checklist
