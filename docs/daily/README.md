@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-06
+
+- [Cloud Cost Optimization：Kubernetes 与 Serverless 的 FinOps 生产实践](./2026-07-06-cloud-cost-optimization-finops-kubernetes-serverless.md) - 深入解析云原生成本优化核心策略，掌握 FinOps 三大支柱（可见性/优化/运营）、Kubernetes 资源右 Sizing 实践、Spot 实例混合部署、非生产环境自动缩容、Serverless 成本调优，涵盖 OOMKilled/Spot 回收/冷启动延迟/成本监控滞后等 5 大常见坑排查指南，提供 Python 成本计算器/KubeDownscaler 配置/Prometheus 成本告警规则完整示例与生产级部署 Checklist
+
 ## 2026-07-05
 
 - [AI Model Quantization for Edge Deployment：INT8/FP16 量化生产实践](./2026-07-05-ai-model-quantization-edge-deployment.md) - 深入解析 LLM 边缘部署核心量化技术，掌握 PTQ/QAT 原理、llama.cpp GGUF 量化、ONNX Runtime INT8 校准、TensorRT 部署优化，涵盖 Llama-3-8B Q4_K_M 量化实战、Jetson Nano 边缘部署完整示例，含精度下降/校准失败/GGUF 加载错误/边缘 OOM/推理不一致等 5 大常见坑排查指南，提供 demos/edge-quantization 可运行项目与生产级部署 Checklist
