@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-07
+
+- [Stream Processing：使用 Apache Kafka 和 Flink 构建实时数据管道](./2026-07-07-stream-processing-kafka-flink-pipelines.md) - 深入解析 Kafka+Flink 流式处理黄金组合，掌握 Topic/Partition/Consumer Group 核心概念、DataStream/Checkpoint/State Backend 架构原理、Exactly-Once 语义实现，涵盖实时用户行为分析完整示例（Docker Compose 环境/Kafka Source & Sink 配置/Flink 窗口聚合）、Python 生产者消费者代码，含消息重复消费/水位线延迟/反压/状态后端 OOM/Kafka 连接不稳定等 5 大常见坑排查指南，提供 demos/stream-processing 可运行项目与生产级部署 Checklist
+
 ## 2026-07-06
 
 - [Cloud Cost Optimization：Kubernetes 与 Serverless 的 FinOps 生产实践](./2026-07-06-cloud-cost-optimization-finops-kubernetes-serverless.md) - 深入解析云原生成本优化核心策略，掌握 FinOps 三大支柱（可见性/优化/运营）、Kubernetes 资源右 Sizing 实践、Spot 实例混合部署、非生产环境自动缩容、Serverless 成本调优，涵盖 OOMKilled/Spot 回收/冷启动延迟/成本监控滞后等 5 大常见坑排查指南，提供 Python 成本计算器/KubeDownscaler 配置/Prometheus 成本告警规则完整示例与生产级部署 Checklist
