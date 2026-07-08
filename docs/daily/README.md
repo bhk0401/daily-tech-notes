@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-08
+
+- [Monorepo 管理实践：Turborepo + pnpm Workspace 高效开发指南](./2026-07-08-monorepo-management-turborepo-pnpm.md) - 深入解析 Monorepo 架构核心优势与适用场景，掌握 pnpm Workspace 依赖管理机制（硬链接/符号链接/依赖提升）、Turborepo 增量构建引擎（任务管道/远程缓存/并行执行），涵盖共享组件库 + 多应用完整示例、依赖版本冲突/循环依赖/缓存失效/TypeScript 路径解析/CI 构建慢等 5 大常见坑排查指南，提供 demos/monorepo-setup 可运行项目与生产级部署 Checklist
+
 ## 2026-07-07
 
 - [Stream Processing：使用 Apache Kafka 和 Flink 构建实时数据管道](./2026-07-07-stream-processing-kafka-flink-pipelines.md) - 深入解析 Kafka+Flink 流式处理黄金组合，掌握 Topic/Partition/Consumer Group 核心概念、DataStream/Checkpoint/State Backend 架构原理、Exactly-Once 语义实现，涵盖实时用户行为分析完整示例（Docker Compose 环境/Kafka Source & Sink 配置/Flink 窗口聚合）、Python 生产者消费者代码，含消息重复消费/水位线延迟/反压/状态后端 OOM/Kafka 连接不稳定等 5 大常见坑排查指南，提供 demos/stream-processing 可运行项目与生产级部署 Checklist
