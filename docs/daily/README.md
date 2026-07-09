@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-09
+
+- [LLM 缓存与成本优化：语义缓存、Prompt 缓存与 Token 管理](./2026-07-09-llm-caching-cost-optimization.md) - 深入解析 LLM 生产环境成本优化三大核心策略，掌握语义缓存（向量嵌入/相似度搜索/Redis 实现）、Anthropic Prompt Caching 原生机制（cache_control 标记/1024 tokens 阈值/90% 成本节省）、Token 管理优化技巧（tiktoken 计数/消息截断/prompt 精简），涵盖 Python 完整实现示例（SemanticLLMCache 类/向量索引创建/相似度查询）、Anthropic 缓存客户端、Token 优化工具类，含缓存命中率低/缓存污染/缓存未生效/Token 计数不准/Redis 性能下降等 5 大常见坑排查指南，提供 demos/llm-caching 可运行项目与生产级部署 Checklist
+
 ## 2026-07-08
 
 - [Monorepo 管理实践：Turborepo + pnpm Workspace 高效开发指南](./2026-07-08-monorepo-management-turborepo-pnpm.md) - 深入解析 Monorepo 架构核心优势与适用场景，掌握 pnpm Workspace 依赖管理机制（硬链接/符号链接/依赖提升）、Turborepo 增量构建引擎（任务管道/远程缓存/并行执行），涵盖共享组件库 + 多应用完整示例、依赖版本冲突/循环依赖/缓存失效/TypeScript 路径解析/CI 构建慢等 5 大常见坑排查指南，提供 demos/monorepo-setup 可运行项目与生产级部署 Checklist
