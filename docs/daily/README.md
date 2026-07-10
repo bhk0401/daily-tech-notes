@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-10
+
+- [Container Health Checks & Graceful Shutdown: Production-Ready Patterns](./2026-07-10-container-health-checks-graceful-shutdown.md) - 深入解析 Kubernetes 健康检查三大探针机制（Liveness/Readiness/Startup）与优雅关闭完整生命周期，掌握 HTTP/TCP/Exec 检测方式、关键参数配置策略、SIGTERM 信号处理、preStop Hook 配置，涵盖 Node.js 完整实现示例（健康检查端点/优雅关闭处理器/连接耗尽机制）、Docker Compose 本地测试环境，含 Liveness 误杀慢启动/Readiness 流量未摘除/优雅关闭未生效/健康检查端点假阳性/级联故障等 5 大常见坑排查指南，提供 demos/health-checks 可运行项目与生产级部署 Checklist
+
 ## 2026-07-09
 
 - [LLM 缓存与成本优化：语义缓存、Prompt 缓存与 Token 管理](./2026-07-09-llm-caching-cost-optimization.md) - 深入解析 LLM 生产环境成本优化三大核心策略，掌握语义缓存（向量嵌入/相似度搜索/Redis 实现）、Anthropic Prompt Caching 原生机制（cache_control 标记/1024 tokens 阈值/90% 成本节省）、Token 管理优化技巧（tiktoken 计数/消息截断/prompt 精简），涵盖 Python 完整实现示例（SemanticLLMCache 类/向量索引创建/相似度查询）、Anthropic 缓存客户端、Token 优化工具类，含缓存命中率低/缓存污染/缓存未生效/Token 计数不准/Redis 性能下降等 5 大常见坑排查指南，提供 demos/llm-caching 可运行项目与生产级部署 Checklist
