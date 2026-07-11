@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-11
+
+- [GitOps Security: ArgoCD Policy Enforcement, Image Verification & Supply Chain Protection](./2026-07-11-gitops-security-argocd-policy-enforcement.md) - 深入解析 GitOps 安全最佳实践，掌握 ArgoCD 策略 enforcement（Kyverno/OPA）、镜像签名验证（Cosign/Sigstore）、密钥管理（Sealed Secrets）与供应链防护，构建零信任持续交付流水线，涵盖 privileged 容器拦截/resource limits 强制/latest 标签禁止等核心策略，含 Kyverno 策略未生效/镜像验证失败/SealedSecret 解密错误/ArgoCD 持续 OutOfSync/Git 签名验证失败等 5 大常见坑排查指南，提供 demos/gitops-security 可运行项目与生产级部署 Checklist
+
 ## 2026-07-10
 
 - [Container Health Checks & Graceful Shutdown: Production-Ready Patterns](./2026-07-10-container-health-checks-graceful-shutdown.md) - 深入解析 Kubernetes 健康检查三大探针机制（Liveness/Readiness/Startup）与优雅关闭完整生命周期，掌握 HTTP/TCP/Exec 检测方式、关键参数配置策略、SIGTERM 信号处理、preStop Hook 配置，涵盖 Node.js 完整实现示例（健康检查端点/优雅关闭处理器/连接耗尽机制）、Docker Compose 本地测试环境，含 Liveness 误杀慢启动/Readiness 流量未摘除/优雅关闭未生效/健康检查端点假阳性/级联故障等 5 大常见坑排查指南，提供 demos/health-checks 可运行项目与生产级部署 Checklist
