@@ -1,0 +1,46 @@
+version: '3.8'
+
+services:
+  bff:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - USER_SERVICE_URL=http://user-service:80
+      - PRODUCT_SERVICE_URL=http://product-service:80
+      - PROMOTION_SERVICE_URL=http://promotion-service:80
+      - CART_SERVICE_URL=http://cart-service:80
+    depends_on:
+      - user-service
+      - product-service
+      - promotion-service
+      - cart-service
+
+  # Mock 下游服务（使用 Nginx 返回静态 JSON）
+  user-service:
+    image: nginx:alpine
+    volumes:
+      - ./mocks/user:/usr/share/nginx/html:ro
+    ports:
+      - "3001:80"
+
+  product-service:
+    image: nginx:alpine
+    volumes:
+      - ./mocks/product:/usr/share/nginx/html:ro
+    ports:
+      - "3002:80"
+
+  promotion-service:
+    image: nginx:alpine
+    volumes:
+      - ./mocks/promotion:/usr/share/nginx/html:ro
+    ports:
+      - "3003:80"
+
+  cart-service:
+    image: nginx:alpine
+    volumes:
+      - ./mocks/cart:/usr/share/nginx/html:ro
+    ports:
+      - "3004:80"

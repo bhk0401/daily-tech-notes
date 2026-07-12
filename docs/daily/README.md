@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-12
+
+- [Backend for Frontend (BFF) Pattern：API Gateway vs GraphQL vs REST Aggregation 生产实践](./2026-07-12-bff-pattern-api-aggregation.md) - 深入解析 BFF 架构核心模式，掌握 API Gateway 聚合、GraphQL 统一层、REST Aggregator 三种实现策略，涵盖 Node.js + Express 完整示例、GraphQL Schema 设计、Gateway 路由配置，含 N+1 查询/缓存穿透/超时级联/认证传递/版本管理等 5 大常见坑排查指南，提供 demos/bff-pattern 可运行项目与生产级部署 Checklist
+
 ## 2026-07-11
 
 - [GitOps Security: ArgoCD Policy Enforcement, Image Verification & Supply Chain Protection](./2026-07-11-gitops-security-argocd-policy-enforcement.md) - 深入解析 GitOps 安全最佳实践，掌握 ArgoCD 策略 enforcement（Kyverno/OPA）、镜像签名验证（Cosign/Sigstore）、密钥管理（Sealed Secrets）与供应链防护，构建零信任持续交付流水线，涵盖 privileged 容器拦截/resource limits 强制/latest 标签禁止等核心策略，含 Kyverno 策略未生效/镜像验证失败/SealedSecret 解密错误/ArgoCD 持续 OutOfSync/Git 签名验证失败等 5 大常见坑排查指南，提供 demos/gitops-security 可运行项目与生产级部署 Checklist
