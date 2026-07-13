@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: image-validator
+  namespace: webhook-system
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: image-validator
+  template:
+    metadata:
+      labels:
+        app: image-validator
+    spec:
+      containers:
+      - name: validator
+        image: registry.company.com/webhook/image-validator:v1.0.0
+        ports:
+        - containerPort: 8443
+        volumeMounts:
+        - name: tls
+          mountPath: /certs
+          readOnly: true
+        resources:
+          requests:
+            cpu: 100m
+            memory: 128Mi
+          limits:
+            cpu: 500m
+            memory: 512Mi
+        readinessProbe:
+          httpsGet:
+            path: /healthz
+            port: 8443
+          initialDelaySeconds: 5
+          periodSeconds: 10
+      volumes:
+      - name: tls
+        secret:
+          secretName: image-validator-tls
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: image-validator
+  namespace: webhook-system
+spec:
+  selector:
+    app: image-validator
+  ports:
+  - port: 443
+    targetPort: 8443

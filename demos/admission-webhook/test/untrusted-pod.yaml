@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: untrusted-pod
+  namespace: default
+  labels:
+    app: test
+spec:
+  containers:
+  - name: untrusted
+    image: random-registry.example.com/malicious:latest
+    ports:
+    - containerPort: 8080

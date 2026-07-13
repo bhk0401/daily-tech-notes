@@ -1,0 +1,29 @@
+# 使用 cert-manager 自动管理证书
+# 前提：集群已安装 cert-manager
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: image-validator-cert
+  namespace: webhook-system
+spec:
+  dnsNames:
+  - image-validator.webhook-system.svc
+  - image-validator.webhook-system.svc.cluster.local
+  issuerRef:
+    kind: ClusterIssuer
+    name: cluster-issuer
+  secretName: image-validator-tls
+---
+apiVersion: cert-manager.io/v1
+kind: Certificate
+metadata:
+  name: label-injector-cert
+  namespace: webhook-system
+spec:
+  dnsNames:
+  - label-injector.webhook-system.svc
+  - label-injector.webhook-system.svc.cluster.local
+  issuerRef:
+    kind: ClusterIssuer
+    name: cluster-issuer
+  secretName: label-injector-tls

@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-13
+
+- [Kubernetes Admission Webhooks：ValidatingWebhook 与 MutatingWebhook 自定义策略实战](./2026-07-13-kubernetes-admission-webhooks-custom-policy.md) - 深入解析 Kubernetes Admission Webhook 工作机制，掌握 ValidatingWebhook 与 MutatingWebhook 的核心区别与适用场景，实现镜像仓库策略校验（Validating）与自动标签注入（Mutating）完整示例，涵盖 TLS 证书配置/无限递归避免/failurePolicy 选择/JSON Patch 格式等核心要点，含 Webhook 超时/证书验证失败/无限递归/Patch 格式错误/failurePolicy 配置不当等 5 大常见坑排查指南，提供 demos/admission-webhook 可运行项目与生产级部署 Checklist
+
 ## 2026-07-12
 
 - [Backend for Frontend (BFF) Pattern：API Gateway vs GraphQL vs REST Aggregation 生产实践](./2026-07-12-bff-pattern-api-aggregation.md) - 深入解析 BFF 架构核心模式，掌握 API Gateway 聚合、GraphQL 统一层、REST Aggregator 三种实现策略，涵盖 Node.js + Express 完整示例、GraphQL Schema 设计、Gateway 路由配置，含 N+1 查询/缓存穿透/超时级联/认证传递/版本管理等 5 大常见坑排查指南，提供 demos/bff-pattern 可运行项目与生产级部署 Checklist
