@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-14
+
+- [LLM Guardrails 与内容审核：生产环境的安全防护实践](./2026-07-14-llm-guardrails-content-moderation.md) - 深入解析 LLM 应用安全防护体系，掌握 Prompt Injection 检测/有害内容过滤/PII 脱敏/毒性检测核心机制，涵盖 Python Guardrails Pipeline 完整实现（InputGuardrail/OutputGuardrail 类）、NVIDIA NeMo Guardrails 配置、风险分级响应策略，含过度拦截误报/注入漏报/PII 脱敏不完整/性能开销过大等 4 大常见坑排查指南，提供 demos/guardrails 可运行项目与生产级部署 Checklist
+
 ## 2026-07-13
 
 - [Kubernetes Admission Webhooks：ValidatingWebhook 与 MutatingWebhook 自定义策略实战](./2026-07-13-kubernetes-admission-webhooks-custom-policy.md) - 深入解析 Kubernetes Admission Webhook 工作机制，掌握 ValidatingWebhook 与 MutatingWebhook 的核心区别与适用场景，实现镜像仓库策略校验（Validating）与自动标签注入（Mutating）完整示例，涵盖 TLS 证书配置/无限递归避免/failurePolicy 选择/JSON Patch 格式等核心要点，含 Webhook 超时/证书验证失败/无限递归/Patch 格式错误/failurePolicy 配置不当等 5 大常见坑排查指南，提供 demos/admission-webhook 可运行项目与生产级部署 Checklist

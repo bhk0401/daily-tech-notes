@@ -1,0 +1,53 @@
+# NeMo Guardrails 配置示例
+
+models:
+  - type: main
+    engine: openai
+    model: gpt-4
+
+rails:
+  input:
+    flows:
+      - check injection attempt
+      - check sensitive topics
+  
+  output:
+    flows:
+      - check toxicity
+      - redact pii
+  
+  dialog:
+    flows:
+      - self check facts
+      - enforce topic boundaries
+
+instructions:
+  - type: general
+    content: |
+      你是一个专业的技术助手。只提供准确、有用的信息。
+      如果不确定答案，请明确说明。
+      不要生成有害、违法或不适当的内容。
+      对于敏感话题，提供教育性信息但不提供具体指导。
+
+custom_llm:
+  # 自定义 LLM 调用配置
+  max_tokens: 2048
+  temperature: 0.7
+  top_p: 0.9
+
+safety:
+  # 安全配置
+  max_input_length: 2000
+  max_output_length: 4096
+  risk_thresholds:
+    low: 0.3
+    medium: 0.6
+    high: 0.8
+
+logging:
+  # 审计日志配置
+  level: INFO
+  format: json
+  include_input: true
+  include_output: true
+  redact_pii: true
