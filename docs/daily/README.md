@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-15
+
+- [Kubernetes Ingress Controllers：NGINX vs Traefik vs ALB 生产对比](./2026-07-15-k8s-ingress-controller-comparison.md) - 深入对比三款主流 Kubernetes Ingress Controller，掌握 NGINX/Traefik/AWS ALB 架构差异与适用场景，涵盖多服务路由配置/YAML 示例/性能压测数据（QPS/延迟/内存），含配置重载连接中断/Traefik 中间件作用域/ALB Group 配置/TLS 证书更新/健康检查失败等 5 大常见坑排查指南，提供 demos/ingress-controller-comparison 可运行项目与生产级部署 Checklist
+
 ## 2026-07-14
 
 - [LLM Guardrails 与内容审核：生产环境的安全防护实践](./2026-07-14-llm-guardrails-content-moderation.md) - 深入解析 LLM 应用安全防护体系，掌握 Prompt Injection 检测/有害内容过滤/PII 脱敏/毒性检测核心机制，涵盖 Python Guardrails Pipeline 完整实现（InputGuardrail/OutputGuardrail 类）、NVIDIA NeMo Guardrails 配置、风险分级响应策略，含过度拦截误报/注入漏报/PII 脱敏不完整/性能开销过大等 4 大常见坑排查指南，提供 demos/guardrails 可运行项目与生产级部署 Checklist
