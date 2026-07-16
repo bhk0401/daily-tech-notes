@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-16
+
+- [Kubernetes Pod Disruption Budgets：生产环境高可用防护实践](./2026-07-16-kubernetes-pdb-high-availability.md) - 深入解析 Pod Disruption Budget (PDB) 核心机制，掌握 voluntary disruption 防护策略，确保集群维护、节点缩容、应用升级期间的服务连续性，涵盖 minAvailable/maxUnavailable 配置策略、PDB 与 HPA/Cluster Autoscaler 交互、StatefulSet 有状态服务保护，含 PDB 阻塞节点维护/PDB 与 HPA 冲突/选择器不匹配/involuntary disruptions 无效/CA 缩容阻塞等 5 大常见坑排查指南，提供 demos/pdb-lab 可运行项目与生产级部署 Checklist
+
 ## 2026-07-15
 
 - [Kubernetes Ingress Controllers：NGINX vs Traefik vs ALB 生产对比](./2026-07-15-k8s-ingress-controller-comparison.md) - 深入对比三款主流 Kubernetes Ingress Controller，掌握 NGINX/Traefik/AWS ALB 架构差异与适用场景，涵盖多服务路由配置/YAML 示例/性能压测数据（QPS/延迟/内存），含配置重载连接中断/Traefik 中间件作用域/ALB Group 配置/TLS 证书更新/健康检查失败等 5 大常见坑排查指南，提供 demos/ingress-controller-comparison 可运行项目与生产级部署 Checklist
