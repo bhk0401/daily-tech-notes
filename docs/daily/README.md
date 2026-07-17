@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-17
+
+- [Database Sharding：分库分表策略与中间件选型生产实践](./2026-07-17-database-sharding-strategies-middleware.md) - 深入解析数据库水平拆分核心策略，掌握 Range/Hash/Geo/Composite 分片算法适用场景，对比 ShardingSphere/Vitess/Citus 中间件选型，涵盖 Snowflake 分布式 ID 生成、双写迁移方案、跨分片查询优化（ES 异构索引），含分片键选择错误/分布式事务不一致/扩容锁表/时钟回拨/数据倾斜等 5 大常见坑排查指南，提供 ShardingSphere-JDBC 完整配置示例与 Python 迁移脚本，附生产级部署 Checklist
+
 ## 2026-07-16
 
 - [Kubernetes Pod Disruption Budgets：生产环境高可用防护实践](./2026-07-16-kubernetes-pdb-high-availability.md) - 深入解析 Pod Disruption Budget (PDB) 核心机制，掌握 voluntary disruption 防护策略，确保集群维护、节点缩容、应用升级期间的服务连续性，涵盖 minAvailable/maxUnavailable 配置策略、PDB 与 HPA/Cluster Autoscaler 交互、StatefulSet 有状态服务保护，含 PDB 阻塞节点维护/PDB 与 HPA 冲突/选择器不匹配/involuntary disruptions 无效/CA 缩容阻塞等 5 大常见坑排查指南，提供 demos/pdb-lab 可运行项目与生产级部署 Checklist
