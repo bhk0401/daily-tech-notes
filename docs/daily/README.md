@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-18
+
+- [Edge AI Inference：WebAssembly + ONNX Runtime 边缘推理实战](./2026-07-18-edge-ai-inference-wasm-onnx.md) - 深入解析边缘 AI 推理核心架构，掌握 WebAssembly 沙箱安全执行与 ONNX Runtime 多后端加速机制，涵盖浏览器端图像分类（ONNX Runtime Web + ResNet-50）、Cloudflare Workers 边缘部署（TypeScript 推理服务）、Rust+Wasm 高性能模块构建，含模型加载失败/推理性能低下/内存泄漏/边缘环境兼容性/浏览器兼容性等 5 大常见坑排查指南，提供 demos/browser-inference、demos/edge-worker、demos/rust-wasm 可运行项目与生产级部署 Checklist
+
 ## 2026-07-17
 
 - [Database Sharding：分库分表策略与中间件选型生产实践](./2026-07-17-database-sharding-strategies-middleware.md) - 深入解析数据库水平拆分核心策略，掌握 Range/Hash/Geo/Composite 分片算法适用场景，对比 ShardingSphere/Vitess/Citus 中间件选型，涵盖 Snowflake 分布式 ID 生成、双写迁移方案、跨分片查询优化（ES 异构索引），含分片键选择错误/分布式事务不一致/扩容锁表/时钟回拨/数据倾斜等 5 大常见坑排查指南，提供 ShardingSphere-JDBC 完整配置示例与 Python 迁移脚本，附生产级部署 Checklist
