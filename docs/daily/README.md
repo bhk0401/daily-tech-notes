@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-19
+
+- [eBPF 运行时安全：使用 Falco 和 Tetragon 检测容器威胁](./2026-07-19-ebpf-runtime-security-falco-tetragon.md) - 深入解析 eBPF 在容器运行时安全中的核心应用，掌握 Falco 与 Tetragon 的部署配置与规则编写，涵盖容器逃逸/权限提升/异常文件访问/可疑网络连接/异常进程执行等 5 大威胁检测场景，含 eBPF 程序加载失败/告警疲劳/容器追踪不完整/性能开销过高/误报率高等 5 大常见坑排查指南，提供 Falco Helm 部署/Tetragon 策略配置/自定义检测规则/告警集成完整示例与生产级部署 Checklist
+
 ## 2026-07-18
 
 - [Edge AI Inference：WebAssembly + ONNX Runtime 边缘推理实战](./2026-07-18-edge-ai-inference-wasm-onnx.md) - 深入解析边缘 AI 推理核心架构，掌握 WebAssembly 沙箱安全执行与 ONNX Runtime 多后端加速机制，涵盖浏览器端图像分类（ONNX Runtime Web + ResNet-50）、Cloudflare Workers 边缘部署（TypeScript 推理服务）、Rust+Wasm 高性能模块构建，含模型加载失败/推理性能低下/内存泄漏/边缘环境兼容性/浏览器兼容性等 5 大常见坑排查指南，提供 demos/browser-inference、demos/edge-worker、demos/rust-wasm 可运行项目与生产级部署 Checklist
