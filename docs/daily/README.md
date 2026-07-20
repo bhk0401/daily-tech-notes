@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-20
+
+- [Kubernetes StatefulSet：有状态应用部署实战指南](./2026-07-20-kubernetes-statefulset-stateful-apps.md) - 深入解析 StatefulSet 与 Deployment 核心区别，掌握稳定 Pod 标识符/持久化存储绑定/有序部署更新机制，涵盖 Headless Service 配置、volumeClaimTemplates 存储模板、DNS 稳定寻址等关键概念，提供 Redis 主从集群完整部署示例（3 副本/5Gi 存储/优雅关闭），含 Pod Pending/DNS 解析失败/滚动更新卡住/PVC 未清理/主从切换等 5 大常见坑排查指南，附 demos/statefulset-redis 可运行项目与生产级部署 Checklist
+
 ## 2026-07-19
 
 - [eBPF 运行时安全：使用 Falco 和 Tetragon 检测容器威胁](./2026-07-19-ebpf-runtime-security-falco-tetragon.md) - 深入解析 eBPF 在容器运行时安全中的核心应用，掌握 Falco 与 Tetragon 的部署配置与规则编写，涵盖容器逃逸/权限提升/异常文件访问/可疑网络连接/异常进程执行等 5 大威胁检测场景，含 eBPF 程序加载失败/告警疲劳/容器追踪不完整/性能开销过高/误报率高等 5 大常见坑排查指南，提供 Falco Helm 部署/Tetragon 策略配置/自定义检测规则/告警集成完整示例与生产级部署 Checklist
