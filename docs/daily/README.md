@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-21
+
+- [Platform Engineering：Internal Developer Platform (IDP) 与 Backstage 实战](./2026-07-21-platform-engineering-idp-backstage.md) - 深入解析 Platform Engineering 核心理念与 IDP 架构设计，掌握 Backstage 作为开源 IDP 框架的 Service Catalog/Software Templates/TechDocs 核心组件，涵盖 Docker Compose 最小化部署完整示例、Spring Boot 服务模板脚手架、GitHub 集成配置，含 Catalog 实体同步失败/数据库迁移失败/TechDocs 渲染空白/模板执行卡住等 4 大常见坑排查指南，提供 entities.yaml 组件注册/Template 模板定义/app-config.yaml 配置完整示例与生产级部署 Checklist
+
 ## 2026-07-20
 
 - [Kubernetes StatefulSet：有状态应用部署实战指南](./2026-07-20-kubernetes-statefulset-stateful-apps.md) - 深入解析 StatefulSet 与 Deployment 核心区别，掌握稳定 Pod 标识符/持久化存储绑定/有序部署更新机制，涵盖 Headless Service 配置、volumeClaimTemplates 存储模板、DNS 稳定寻址等关键概念，提供 Redis 主从集群完整部署示例（3 副本/5Gi 存储/优雅关闭），含 Pod Pending/DNS 解析失败/滚动更新卡住/PVC 未清理/主从切换等 5 大常见坑排查指南，附 demos/statefulset-redis 可运行项目与生产级部署 Checklist
