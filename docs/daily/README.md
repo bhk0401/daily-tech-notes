@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-22
+
+- [Temporal Workflow Orchestration：构建可靠的分布式工作流](./2026-07-22-temporal-workflow-orchestration.md) - 深入解析 Temporal 工作流编排引擎核心架构，掌握 Workflow/Activity/Worker 三大抽象与状态持久化机制，涵盖电商订单处理完整示例（库存预留/支付处理/通知发送）、Saga 模式分布式事务补偿、确定性代码约束、超时重试配置，含非确定性代码卡住/活动超时配置不当/工作流无法终止/状态增长过大等 4 大常见坑排查指南，提供 TypeScript 完整实现代码与 Docker Compose 部署示例，附生产级部署 Checklist
+
 ## 2026-07-21
 
 - [Platform Engineering：Internal Developer Platform (IDP) 与 Backstage 实战](./2026-07-21-platform-engineering-idp-backstage.md) - 深入解析 Platform Engineering 核心理念与 IDP 架构设计，掌握 Backstage 作为开源 IDP 框架的 Service Catalog/Software Templates/TechDocs 核心组件，涵盖 Docker Compose 最小化部署完整示例、Spring Boot 服务模板脚手架、GitHub 集成配置，含 Catalog 实体同步失败/数据库迁移失败/TechDocs 渲染空白/模板执行卡住等 4 大常见坑排查指南，提供 entities.yaml 组件注册/Template 模板定义/app-config.yaml 配置完整示例与生产级部署 Checklist
