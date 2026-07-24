@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-24
+
+- [LLM Streaming Response：SSE 实现与背压处理生产实践](./2026-07-24-llm-streaming-sse-backpressure.md) - 深入解析大语言模型流式响应核心架构，掌握 Server-Sent Events (SSE) 协议在 LLM 应用中的完整实现方案，涵盖 token-by-token 交付、背压处理、连接恢复、超时控制等生产级机制，含 Nginx 缓冲导致延迟/EventSource 自动重连重复生成/背压控制未生效内存溢出/心跳包误认为数据/LLM API 超时连接挂起等 5 大常见坑排查指南，提供 Node.js + Express 完整示例与前端消费代码，附 demos/llm-streaming-sse 可运行项目与生产级部署 Checklist
+
 ## 2026-07-22
 
 - [Temporal Workflow Orchestration：构建可靠的分布式工作流](./2026-07-22-temporal-workflow-orchestration.md) - 深入解析 Temporal 工作流编排引擎核心架构，掌握 Workflow/Activity/Worker 三大抽象与状态持久化机制，涵盖电商订单处理完整示例（库存预留/支付处理/通知发送）、Saga 模式分布式事务补偿、确定性代码约束、超时重试配置，含非确定性代码卡住/活动超时配置不当/工作流无法终止/状态增长过大等 4 大常见坑排查指南，提供 TypeScript 完整实现代码与 Docker Compose 部署示例，附生产级部署 Checklist
