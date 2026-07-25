@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-25
+
+- [Progressive Delivery：Argo Rollouts 与 Flagger 渐进式交付生产实践](./2026-07-25-progressive-delivery-argo-rollouts-flagger.md) - 深入解析渐进式交付核心架构，掌握 Argo Rollouts 与 Flagger 的 Canary/Blue-Green 部署策略，涵盖 Kubernetes Rollout 资源定义、Istio 流量管理、Prometheus 指标分析、自动化发布决策与回滚机制，含流量未切换/分析持续失败/旧版本 Pod 未清理/数据库迁移不兼容/Service Mesh 配置冲突等 5 大常见坑排查指南，提供 Argo Rollouts 金丝雀发布/Flagger 蓝绿发布完整 YAML 示例与 demos/progressive-delivery 可运行项目，附生产级部署 Checklist
+
 ## 2026-07-24
 
 - [LLM Streaming Response：SSE 实现与背压处理生产实践](./2026-07-24-llm-streaming-sse-backpressure.md) - 深入解析大语言模型流式响应核心架构，掌握 Server-Sent Events (SSE) 协议在 LLM 应用中的完整实现方案，涵盖 token-by-token 交付、背压处理、连接恢复、超时控制等生产级机制，含 Nginx 缓冲导致延迟/EventSource 自动重连重复生成/背压控制未生效内存溢出/心跳包误认为数据/LLM API 超时连接挂起等 5 大常见坑排查指南，提供 Node.js + Express 完整示例与前端消费代码，附 demos/llm-streaming-sse 可运行项目与生产级部署 Checklist
