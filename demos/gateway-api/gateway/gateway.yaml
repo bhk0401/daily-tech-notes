@@ -1,0 +1,36 @@
+apiVersion: gateway.networking.k8s.io/v1
+kind: GatewayClass
+metadata:
+  name: nginx-gateway
+spec:
+  controllerName: gateway.nginx.org/gateway-controller
+---
+apiVersion: gateway.networking.k8s.io/v1
+kind: Gateway
+metadata:
+  name: ecommerce-gateway
+  namespace: gateway-system
+spec:
+  gatewayClassName: nginx-gateway
+  listeners:
+  - name: http
+    protocol: HTTP
+    port: 80
+    hostname: "*.ecommerce.example.com"
+    allowedRoutes:
+      namespaces:
+        from: All
+  - name: https
+    protocol: HTTPS
+    port: 443
+    hostname: "*.ecommerce.example.com"
+    tls:
+      mode: Terminate
+      certificateRefs:
+      - name: ecommerce-tls
+    allowedRoutes:
+      namespaces:
+        from: Selector
+        selector:
+          matchLabels:
+            environment: production

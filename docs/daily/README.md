@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-26
+
+- [Kubernetes Gateway API：下一代流量管理标准生产实践](./2026-07-26-kubernetes-gateway-api-production.md) - 深入解析 Gateway API 核心架构与角色分离设计，掌握 GatewayClass/Gateway/HTTPRoute/ReferenceGrant 四大资源模型，涵盖 HTTP/HTTPS/gRPC/TCP/UDP 多协议支持、加权路由、头部匹配、URL 重写、请求重定向等高级流量管理功能，含路由未绑定/跨命名空间引用被拒绝/TLS 证书未生效/加权路由流量分配异常/Listener 冲突等 5 大常见坑排查指南，提供电商场景完整 YAML 示例与 demos/gateway-api 可运行项目，附从 Ingress 迁移指南与生产级部署 Checklist
+
 ## 2026-07-25
 
 - [Progressive Delivery：Argo Rollouts 与 Flagger 渐进式交付生产实践](./2026-07-25-progressive-delivery-argo-rollouts-flagger.md) - 深入解析渐进式交付核心架构，掌握 Argo Rollouts 与 Flagger 的 Canary/Blue-Green 部署策略，涵盖 Kubernetes Rollout 资源定义、Istio 流量管理、Prometheus 指标分析、自动化发布决策与回滚机制，含流量未切换/分析持续失败/旧版本 Pod 未清理/数据库迁移不兼容/Service Mesh 配置冲突等 5 大常见坑排查指南，提供 Argo Rollouts 金丝雀发布/Flagger 蓝绿发布完整 YAML 示例与 demos/progressive-delivery 可运行项目，附生产级部署 Checklist
