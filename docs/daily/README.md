@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-27
+
+- [Kubernetes Multi-Cluster Management: Cluster API, Federation, and GitOps at Scale](./2026-07-27-kubernetes-multi-cluster-management.md) - 深入解析 Kubernetes 多集群管理三大核心方案，掌握 Cluster API 声明式集群生命周期管理、KubeFed 联邦控制平面资源同步、ArgoCD 多集群 GitOps 持续交付流水线，涵盖电商全球化场景实战（北美/欧洲/亚太三地部署）、集群编排自动化、联邦资源差异化配置、ApplicationSet 模板化部署，含 Cluster API 创建多集群/KubeFed 联邦 Deployment/ArgoCD 多集群流水线完整 YAML 示例与 demos/multi-cluster Kind 本地测试环境，附集群创建卡住/资源同步失败/连接断开/配置漂移/调度异常等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-07-26
 
 - [Kubernetes Gateway API：下一代流量管理标准生产实践](./2026-07-26-kubernetes-gateway-api-production.md) - 深入解析 Gateway API 核心架构与角色分离设计，掌握 GatewayClass/Gateway/HTTPRoute/ReferenceGrant 四大资源模型，涵盖 HTTP/HTTPS/gRPC/TCP/UDP 多协议支持、加权路由、头部匹配、URL 重写、请求重定向等高级流量管理功能，含路由未绑定/跨命名空间引用被拒绝/TLS 证书未生效/加权路由流量分配异常/Listener 冲突等 5 大常见坑排查指南，提供电商场景完整 YAML 示例与 demos/gateway-api 可运行项目，附从 Ingress 迁移指南与生产级部署 Checklist

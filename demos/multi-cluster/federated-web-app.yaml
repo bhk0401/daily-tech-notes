@@ -1,0 +1,111 @@
+# Federated Web Application for Multi-Cluster Demo
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: ecommerce
+---
+apiVersion: types.kubefed.io/v1beta1
+kind: FederatedNamespace
+metadata:
+  name: ecommerce
+  namespace: ecommerce
+spec:
+  placement:
+    clusters:
+      - name: cluster-us-east
+      - name: cluster-eu-west
+      - name: cluster-ap-south
+---
+apiVersion: types.kubefed.io/v1beta1
+kind: FederatedDeployment
+metadata:
+  name: web-frontend
+  namespace: ecommerce
+spec:
+  template:
+    metadata:
+      labels:
+        app: web-frontend
+    spec:
+      replicas: 3
+      selector:
+        matchLabels:
+          app: web-frontend
+      template:
+        metadata:
+          labels:
+            app: web-frontend
+        spec:
+          containers:
+            - name: frontend
+              image: nginx:1.25
+              ports:
+                - containerPort: 80
+              resources:
+                requests:
+                  cpu: "100m"
+                  memory: "128Mi"
+                limits:
+                  cpu: "200m"
+                  memory: "256Mi"
+              env:
+                - name: REGION
+                  value: "default"
+          affinity:
+            podAntiAffinity:
+              preferredDuringSchedulingIgnoredDuringExecution:
+                - weight: 100
+                  podAffinityTerm:
+                    labelSelector:
+                      matchLabels:
+                        app: web-frontend
+                    topologyKey: kubernetes.io/hostname
+  placement:
+    clusters:
+      - name: cluster-us-east
+      - name: cluster-eu-west
+      - name: cluster-ap-south
+  overrides:
+    - clusterName: cluster-us-east
+      path: /spec/replicas
+      value: 5
+    - clusterName: cluster-us-east
+      path: /spec/template/spec/containers/0/env/0/value
+      value: "us"
+    - clusterName: cluster-eu-west
+      path: /spec/replicas
+      value: 3
+    - clusterName: cluster-eu-west
+      path: /spec/template/spec/containers/0/env/0/value
+      value: "eu"
+    - clusterName: cluster-ap-south
+      path: /spec/replicas
+      value: 3
+    - clusterName: cluster-ap-south
+      path: /spec/template/spec/containers/0/env/0/value
+      value: "ap"
+---
+apiVersion: types.kubefed.io/v1beta1
+kind: FederatedService
+metadata:
+  name: web-frontend
+  namespace: ecommerce
+spec:
+  template:
+    metadata:
+      labels:
+        app: web-frontend
+    spec:
+      type: ClusterIP
+      ports:
+        - port: 80
+          targetPort: 80
+          protocol: TCP
+          name: http
+      selector:
+        app: web-frontend
+  placement:
+    clusters:
+      - name: cluster-us-east
+      - name: cluster-eu-west
+      - name: cluster-ap-south
