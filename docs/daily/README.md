@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-28
+
+- [Distributed Locking Patterns: Redis、etcd 与数据库方案生产实践](./2026-07-28-distributed-locking-patterns.md) - 深入解析分布式锁三大核心实现方案，掌握 Redis Redlock 算法、etcd Lease 机制、数据库乐观/悲观锁，涵盖订单去重/库存扣减/定时任务防并发等场景，含锁误删/TTL 设置不当/Watch 连接断开/数据库死锁/主从切换锁丢失等 5 大常见坑排查指南，提供 Python 完整实现代码与 Docker Compose 本地测试环境，附生产级部署 Checklist
+
 ## 2026-07-27
 
 - [Kubernetes Multi-Cluster Management: Cluster API, Federation, and GitOps at Scale](./2026-07-27-kubernetes-multi-cluster-management.md) - 深入解析 Kubernetes 多集群管理三大核心方案，掌握 Cluster API 声明式集群生命周期管理、KubeFed 联邦控制平面资源同步、ArgoCD 多集群 GitOps 持续交付流水线，涵盖电商全球化场景实战（北美/欧洲/亚太三地部署）、集群编排自动化、联邦资源差异化配置、ApplicationSet 模板化部署，含 Cluster API 创建多集群/KubeFed 联邦 Deployment/ArgoCD 多集群流水线完整 YAML 示例与 demos/multi-cluster Kind 本地测试环境，附集群创建卡住/资源同步失败/连接断开/配置漂移/调度异常等 5 大常见坑排查指南与生产级部署 Checklist
