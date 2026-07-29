@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-29
+
+- [LLM Gateway Production Patterns: Multi-Provider Routing, Fallback, and Cost Optimization](./2026-07-29-llm-gateway-multi-provider-routing.md) - 构建生产级 LLM 网关实现多供应商（OpenAI/Anthropic/Google）路由、自动故障转移和成本优化，掌握 Priority-based/Cost-based/Latency-based 路由策略、429 速率限制连锁故障防护、Token 计数不一致处理、流式响应 fallback 机制，含 Node.js + TypeScript 完整 Gateway 实现（成本追踪/预算控制/健康检查）、Docker Compose 本地测试环境、Prometheus 监控指标与 Grafana 仪表板查询，附供应商切换上下文不一致/成本追踪偏差/API 格式变更等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-07-28
 
 - [Distributed Locking Patterns: Redis、etcd 与数据库方案生产实践](./2026-07-28-distributed-locking-patterns.md) - 深入解析分布式锁三大核心实现方案，掌握 Redis Redlock 算法、etcd Lease 机制、数据库乐观/悲观锁，涵盖订单去重/库存扣减/定时任务防并发等场景，含锁误删/TTL 设置不当/Watch 连接断开/数据库死锁/主从切换锁丢失等 5 大常见坑排查指南，提供 Python 完整实现代码与 Docker Compose 本地测试环境，附生产级部署 Checklist
