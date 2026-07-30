@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-30
+
+- [AI Agent Memory Systems：向量数据库 vs 传统数据库 vs 文件存储实战对比](./2026-07-30-ai-agent-memory-storage-comparison.md) - 深入对比三种 Agent 记忆存储方案（向量数据库/PostgreSQL+pgvector/文件存储），掌握 Chroma/Qdrant/Pinecone 向量检索、混合查询优化、基准测试方法，涵盖写入延迟/搜索 P99/成本分析量化指标，含统一接口抽象实现、基准测试脚本、demos/agent-memory-comparison 可运行项目，附向量维度不匹配/元数据过滤失效/HNSW 索引构建缓慢/记忆膨胀成本失控等 4 大常见坑排查指南与选型决策树 Checklist
+
 ## 2026-07-29
 
 - [LLM Gateway Production Patterns: Multi-Provider Routing, Fallback, and Cost Optimization](./2026-07-29-llm-gateway-multi-provider-routing.md) - 构建生产级 LLM 网关实现多供应商（OpenAI/Anthropic/Google）路由、自动故障转移和成本优化，掌握 Priority-based/Cost-based/Latency-based 路由策略、429 速率限制连锁故障防护、Token 计数不一致处理、流式响应 fallback 机制，含 Node.js + TypeScript 完整 Gateway 实现（成本追踪/预算控制/健康检查）、Docker Compose 本地测试环境、Prometheus 监控指标与 Grafana 仪表板查询，附供应商切换上下文不一致/成本追踪偏差/API 格式变更等 5 大常见坑排查指南与生产级部署 Checklist
