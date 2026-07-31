@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-07-31
+
+- [容器镜像优化：Distroless、Slim 与多架构构建实战](./2026-07-31-container-image-optimization-distroless-multiarch.md) - 深入解析容器镜像优化三大核心方向，掌握多阶段构建（体积减少 97%）、Distroless 安全加固（CVE 减少 70%+）、多架构构建（amd64/arm64/arm/v7）实战技巧，涵盖 Go/Node.js 完整 Dockerfile 示例、docker buildx 多平台构建流程、.dockerignore 最佳实践，含 Distroless 无法调试/多架构构建极慢/CGO 导致运行失败/缓存失效等 4 大常见坑排查指南，提供 dive 镜像分析/Trivy 安全扫描命令清单与生产级部署 Checklist
+
 ## 2026-07-30
 
 - [AI Agent Memory Systems：向量数据库 vs 传统数据库 vs 文件存储实战对比](./2026-07-30-ai-agent-memory-storage-comparison.md) - 深入对比三种 Agent 记忆存储方案（向量数据库/PostgreSQL+pgvector/文件存储），掌握 Chroma/Qdrant/Pinecone 向量检索、混合查询优化、基准测试方法，涵盖写入延迟/搜索 P99/成本分析量化指标，含统一接口抽象实现、基准测试脚本、demos/agent-memory-comparison 可运行项目，附向量维度不匹配/元数据过滤失效/HNSW 索引构建缓慢/记忆膨胀成本失控等 4 大常见坑排查指南与选型决策树 Checklist
