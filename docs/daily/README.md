@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-08-01
+
+- [Content Security Policy (CSP) 生产实践：前端安全的第一道防线](./2026-08-01-csp-content-security-policy-production.md) - 深入解析 CSP 核心机制与生产环境部署策略，掌握指令详解/渐进式迁移方案/Nonce-Hash 动态脚本注入/报表监控与告警/常见攻击防护（XSS-数据注入 - 点击劫持），涵盖 Nginx-Apache-Node.js-React-Next.js 完整配置示例、CSP Evaluator 自动化检测工具、demos-csp-lab 可运行实验环境，附配置语法错误-内联脚本失效 - 第三方服务兼容 - 报表丢失-Strict-Mode 迁移失败等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-07-31
 
 - [容器镜像优化：Distroless、Slim 与多架构构建实战](./2026-07-31-container-image-optimization-distroless-multiarch.md) - 深入解析容器镜像优化三大核心方向，掌握多阶段构建（体积减少 97%）、Distroless 安全加固（CVE 减少 70%+）、多架构构建（amd64/arm64/arm/v7）实战技巧，涵盖 Go/Node.js 完整 Dockerfile 示例、docker buildx 多平台构建流程、.dockerignore 最佳实践，含 Distroless 无法调试/多架构构建极慢/CGO 导致运行失败/缓存失效等 4 大常见坑排查指南，提供 dive 镜像分析/Trivy 安全扫描命令清单与生产级部署 Checklist

@@ -1,0 +1,13 @@
+{
+  "name": "csp-lab",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "CSP (Content Security Policy) 实验环境 - 用于测试和学习 CSP 策略",
+  "scripts": {
+    "dev": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
