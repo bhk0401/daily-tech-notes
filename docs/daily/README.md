@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-08-02
+
+- [Kubernetes RBAC：最小权限原则与生产环境权限设计](./2026-08-02-kubernetes-rbac-least-privilege.md) - 深入解析 K8s RBAC 四大核心资源（Role/ClusterRole/RoleBinding/ClusterRoleBinding），掌握最小权限原则在 ServiceAccount/CI-CD/开发只读等场景的实战应用，涵盖权限验证工具（kubectl auth can-i）、聚合 ClusterRole 机制、resourceNames 使用误区，含应用最小权限/CI-CD 部署权限/开发只读访问完整 YAML 示例与 demos/rbac 可运行验证脚本，附 ServiceAccount 未绑定/ClusterRole 混用错误/resourceNames 误区/聚合角色未生效/权限变更未生效等 5 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-08-01
 
 - [Content Security Policy (CSP) 生产实践：前端安全的第一道防线](./2026-08-01-csp-content-security-policy-production.md) - 深入解析 CSP 核心机制与生产环境部署策略，掌握指令详解/渐进式迁移方案/Nonce-Hash 动态脚本注入/报表监控与告警/常见攻击防护（XSS-数据注入 - 点击劫持），涵盖 Nginx-Apache-Node.js-React-Next.js 完整配置示例、CSP Evaluator 自动化检测工具、demos-csp-lab 可运行实验环境，附配置语法错误-内联脚本失效 - 第三方服务兼容 - 报表丢失-Strict-Mode 迁移失败等 5 大常见坑排查指南与生产级部署 Checklist
