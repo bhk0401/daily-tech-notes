@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-08-03
+
+- [Kubernetes GPU 调度与共享：MIG、时间片分片与虚拟化方案对比](./2026-08-03-k8s-gpu-scheduling-mig-sharing.md) - 深入对比三种 GPU 共享方案（MIG 硬件隔离/时间片软件共享/MPS 虚拟化），掌握 A100/H100 MIG 切分配置、时间片并发控制、GPU Operator 自动化管理，涵盖推理服务/开发测试/混合负载场景选型策略，含 nvidia-smi MIG 配置命令、Kubernetes Pod YAML 示例、GPU Operator Helm 配置，附 MIG 启用失败/资源不足调度失败/时间片性能抖动/Operator 配置冲突等 4 大常见坑排查指南与生产级部署 Checklist
+
 ## 2026-08-02
 
 - [Kubernetes RBAC：最小权限原则与生产环境权限设计](./2026-08-02-kubernetes-rbac-least-privilege.md) - 深入解析 K8s RBAC 四大核心资源（Role/ClusterRole/RoleBinding/ClusterRoleBinding），掌握最小权限原则在 ServiceAccount/CI-CD/开发只读等场景的实战应用，涵盖权限验证工具（kubectl auth can-i）、聚合 ClusterRole 机制、resourceNames 使用误区，含应用最小权限/CI-CD 部署权限/开发只读访问完整 YAML 示例与 demos/rbac 可运行验证脚本，附 ServiceAccount 未绑定/ClusterRole 混用错误/resourceNames 误区/聚合角色未生效/权限变更未生效等 5 大常见坑排查指南与生产级部署 Checklist
