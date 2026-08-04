@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-08-04
+
+- [Kubernetes 垂直扩缩容：VPA 与 HPA 协同策略](./2026-08-04-kubernetes-vpa-hpa-coordination.md) - 深入解析 VPA 工作原理与三种更新模式（Auto/Initial/Off），掌握 VPA 与 HPA 协同的正确姿势避免资源维度冲突，涵盖 Recommender/Updater/Admission Controller 核心组件、Metrics Server 依赖配置、PDB 防止服务中断策略，含 VPA Auto 与 HPA 冲突/Pod 驱逐导致中断/推荐值过于激进/指标数据不足等 4 大常见坑排查指南，提供 Nginx 示例应用、VPA Initial 模式配置、HPA 自定义指标协同配置完整 YAML 示例与 demos/vpa-hpa 可运行项目，附生产级部署 Checklist
+
 ## 2026-08-03
 
 - [Kubernetes GPU 调度与共享：MIG、时间片分片与虚拟化方案对比](./2026-08-03-k8s-gpu-scheduling-mig-sharing.md) - 深入对比三种 GPU 共享方案（MIG 硬件隔离/时间片软件共享/MPS 虚拟化），掌握 A100/H100 MIG 切分配置、时间片并发控制、GPU Operator 自动化管理，涵盖推理服务/开发测试/混合负载场景选型策略，含 nvidia-smi MIG 配置命令、Kubernetes Pod YAML 示例、GPU Operator Helm 配置，附 MIG 启用失败/资源不足调度失败/时间片性能抖动/Operator 配置冲突等 4 大常见坑排查指南与生产级部署 Checklist
