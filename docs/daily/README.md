@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-08-05
+
+- [Kubernetes Ephemeral Containers：生产环境调试的终极武器](./2026-08-05-kubernetes-ephemeral-containers-debugging.md) - 深入解析 Ephemeral Container 核心机制与命名空间共享原理，掌握 kubectl debug 完整调试流程，涵盖网络诊断/进程检查/文件系统排查等实战场景，含 busybox/netshoot/ubuntu 调试镜像选型、--share-processes 进程共享、安全边界与权限控制，附 Ephemeral Container 无法启动/进程不可见/权限不足/性能影响/工具缺失等 5 大常见坑排查指南，提供 demos/ephemeral-debugging 可运行项目与生产级部署 Checklist
+
 ## 2026-08-04
 
 - [Kubernetes 垂直扩缩容：VPA 与 HPA 协同策略](./2026-08-04-kubernetes-vpa-hpa-coordination.md) - 深入解析 VPA 工作原理与三种更新模式（Auto/Initial/Off），掌握 VPA 与 HPA 协同的正确姿势避免资源维度冲突，涵盖 Recommender/Updater/Admission Controller 核心组件、Metrics Server 依赖配置、PDB 防止服务中断策略，含 VPA Auto 与 HPA 冲突/Pod 驱逐导致中断/推荐值过于激进/指标数据不足等 4 大常见坑排查指南，提供 Nginx 示例应用、VPA Initial 模式配置、HPA 自定义指标协同配置完整 YAML 示例与 demos/vpa-hpa 可运行项目，附生产级部署 Checklist

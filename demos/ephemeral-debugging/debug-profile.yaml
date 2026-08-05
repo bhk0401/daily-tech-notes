@@ -1,0 +1,56 @@
+# 自定义调试 Profile：预定义常用调试容器配置
+# 使用方式：kubectl debug -it <pod> --profile=general
+
+apiVersion: v1
+kind: Pod
+metadata:
+  name: debug-template
+spec:
+  ephemeralContainers:
+  - name: debugger
+    image: nicolaka/netshoot:latest
+    securityContext:
+      privileged: false
+      runAsNonRoot: true
+      runAsUser: 1000
+    resources:
+      limits:
+        cpu: 200m
+        memory: 256Mi
+      requests:
+        cpu: 50m
+        memory: 64Mi
+    # 不定义 ports, probes, lifecycle 等（Ephemeral Container 不允许）
+---
+# 网络诊断专用 Profile
+apiVersion: v1
+kind: Pod
+metadata:
+  name: network-debug-template
+spec:
+  ephemeralContainers:
+  - name: netdebug
+    image: nicolaka/netshoot:latest
+    securityContext:
+      privileged: false
+    resources:
+      limits:
+        cpu: 100m
+        memory: 128Mi
+---
+# 进程调试专用 Profile（共享 PID 命名空间）
+apiVersion: v1
+kind: Pod
+metadata:
+  name: process-debug-template
+spec:
+  shareProcessNamespace: true
+  ephemeralContainers:
+  - name: procdebug
+    image: ubuntu:22.04
+    securityContext:
+      privileged: false
+    resources:
+      limits:
+        cpu: 100m
+        memory: 128Mi
