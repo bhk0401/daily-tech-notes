@@ -4,6 +4,10 @@
 
 ---
 
+## 2026-08-06
+
+- [gRPC-Web 实战：浏览器直连 gRPC 服务的完整指南](./2026-08-06-grpc-web-browser-communication.md) - 深入解析 gRPC-Web 协议与标准 gRPC 的核心差异，掌握 Envoy 代理配置实现协议转换/CORS 管理/Traillers 处理，涵盖 Protobuf 契约定义/TypeScript 代码生成工作流/浏览器客户端实现完整示例，含单向 RPC 与服务器流式调用代码、Envoy YAML 配置、Go 后端服务实现，附 CORS 预检失败/流式响应中断/TypeScript 类型不匹配/Traillers 丢失状态码错误等 4 大常见坑排查指南与 demos/grpc-web-chat 可运行项目，提供生产级部署 Checklist
+
 ## 2026-08-05
 
 - [Kubernetes Ephemeral Containers：生产环境调试的终极武器](./2026-08-05-kubernetes-ephemeral-containers-debugging.md) - 深入解析 Ephemeral Container 核心机制与命名空间共享原理，掌握 kubectl debug 完整调试流程，涵盖网络诊断/进程检查/文件系统排查等实战场景，含 busybox/netshoot/ubuntu 调试镜像选型、--share-processes 进程共享、安全边界与权限控制，附 Ephemeral Container 无法启动/进程不可见/权限不足/性能影响/工具缺失等 5 大常见坑排查指南，提供 demos/ephemeral-debugging 可运行项目与生产级部署 Checklist
